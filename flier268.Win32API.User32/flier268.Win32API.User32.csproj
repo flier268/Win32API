@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net5.0-windows</TargetFrameworks>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>flier268</Authors>
+    <Company>flier268.dev</Company>
+    <RepositoryUrl>https://github.com/flier268/Win32API</RepositoryUrl>
+    <PackageTags>Win32;Win32 API</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/flier268/Win32API</PackageProjectUrl>
+    <PackageIcon>icon.jpg</PackageIcon>
+    <Description>P/Invoke methods for the Windows API</Description>
+    <Version>1.0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="flier268.Win32API.Shared" Version="1.0.0" />
+  </ItemGroup>
+</Project>
