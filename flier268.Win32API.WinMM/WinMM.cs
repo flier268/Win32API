@@ -1648,28 +1648,28 @@ namespace flier268.Win32API
 
         #endregion const
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mciGetYieldProc(int mciId, ref int pdwYieldData);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mciSetYieldProc(int mciId, int fpYieldProc, int dwYieldData);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioInstallIOProcA(int fccIOProc, ref int pIOProc, int dwFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern short midiOutGetNumDevs();
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int CloseDriver(IntPtr hDriver, int lParam1, int lParam2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int DefDriverProc(int dwDriverIdentifier, IntPtr hdrvr, int uMsg, int lParam1, int lParam2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int DrvGetModuleHandle(IntPtr hDriver);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int GetDriverModuleHandle(IntPtr hDriver);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
@@ -1678,52 +1678,52 @@ namespace flier268.Win32API
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int PlaySound(string lpszName, IntPtr hModule, int dwFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int SendDriverMessage(IntPtr hDriver, int message, int lParam1, int lParam2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int auxGetDevCaps(int uDeviceID, ref AUXCAPS lpCaps, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int auxGetNumDevs();
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int auxGetVolume(int uDeviceID, ref int lpdwVolume);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int auxOutMessage(int uDeviceID, int msg, int dw1, int dw2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int auxSetVolume(int uDeviceID, int dwVolume);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int joyGetDevCaps(int id, ref JOYCAPS lpCaps, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int joyGetNumDevs();
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int joyGetPos(int uJoyID, ref JOYINFO pji);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int joyGetPosEx(int uJoyID, ref JOYINFOEX pji);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int joyGetThreshold(int id, ref int lpuThreshold);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int joyReleaseCapture(int id);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int joySetCapture(IntPtr hwnd, int uID, int uPeriod, int bChanged);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int joySetThreshold(int id, int uThreshold);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int mciExecute(string lpstrCommand);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mciGetCreatorTask(int wDeviceID);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
@@ -1735,175 +1735,175 @@ namespace flier268.Win32API
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int mciGetErrorString(int dwError, string lpstrBuffer, int uLength);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mciSendCommand(int wDeviceID, int uMessage, int dwParam1, IntPtr dwParam2);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int mciSendString(string lpstrCommand, StringBuilder lpstrReturnString, int uReturnLength, IntPtr hwndCallback);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiConnect(IntPtr hmi, IntPtr hmo, IntPtr pReserved);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiDisconnect(IntPtr hmi, IntPtr hmo, IntPtr pReserved);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInAddBuffer(IntPtr hMidiIn, ref MIDIHDR lpMidiInHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInClose(IntPtr hMidiIn);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInGetDevCaps(int uDeviceID, ref MIDIINCAPS lpCaps, int uSize);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int midiInGetErrorText(int err, string lpText, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInGetID(IntPtr hMidiIn, ref int lpuDeviceID);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInGetNumDevs();
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInMessage(IntPtr hMidiIn, int msg, int dw1, int dw2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInOpen(int lphMidiIn, int uDeviceID, int dwCallback, int dwInstance, int dwFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInPrepareHeader(IntPtr hMidiIn, ref MIDIHDR lpMidiInHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInReset(IntPtr hMidiIn);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInStart(IntPtr hMidiIn);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInStop(IntPtr hMidiIn);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiInUnprepareHeader(IntPtr hMidiIn, ref MIDIHDR lpMidiInHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutCacheDrumPatches(IntPtr hMidiOut, int uPatch, ref int lpKeyArray, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutCachePatches(IntPtr hMidiOut, int uBank, ref int lpPatchArray, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutClose(IntPtr hMidiOut);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutGetDevCaps(int uDeviceID, ref MIDIOUTCAPS lpCaps, int uSize);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int midiOutGetErrorText(int err, StringBuilder lpText, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutGetID(IntPtr hMidiOut, ref int lpuDeviceID);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutGetVolume(int uDeviceID, ref int lpdwVolume);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutLongMsg(IntPtr hMidiOut, ref MIDIHDR lpMidiOutHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutMessage(IntPtr hMidiOut, int msg, int dw1, int dw2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutOpen(int lphMidiOut, int uDeviceID, int dwCallback, int dwInstance, int dwFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutPrepareHeader(IntPtr hMidiOut, ref MIDIHDR lpMidiOutHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutReset(IntPtr hMidiOut);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutSetVolume(int uDeviceID, int dwVolume);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutShortMsg(IntPtr hMidiOut, int dwMsg);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiOutUnprepareHeader(IntPtr hMidiOut, ref MIDIHDR lpMidiOutHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiStreamClose(IntPtr hms);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiStreamOpen(int phms, int puDeviceID, int cMidi, int dwCallback, int dwInstance, int fdwOpen);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiStreamOut(IntPtr hms, ref MIDIHDR pmh, int cbmh);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiStreamPause(IntPtr hms);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiStreamPosition(IntPtr hms, ref MMTIME lpmmt, int cbmmt);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiStreamProperty(IntPtr hms, byte lppropdata, int dwProperty);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiStreamRestart(IntPtr hms);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int midiStreamStop(IntPtr hms);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerClose(IntPtr hmx);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerGetControlDetails(IntPtr hmxobj, ref MIXERCONTROLDETAILS pmxcd, int fdwDetails);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerGetDevCaps(int uMxId, ref MIXERCAPS pmxcaps, int cbmxcaps);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerGetID(IntPtr hmxobj, ref int pumxID, int fdwId);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerGetLineControls(IntPtr hmxobj, ref MIXERLINECONTROLS pmxlc, int fdwControls);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerGetLineInfo(IntPtr hmxobj, ref MIXERLINE pmxl, int fdwInfo);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerGetNumDevs();
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerMessage(IntPtr hmx, int uMsg, int dwParam1, int dwParam2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerOpen(int phmx, int uMxId, int dwCallback, int dwInstance, int fdwOpen);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mixerSetControlDetails(IntPtr hmxobj, ref MIXERCONTROLDETAILS pmxcd, int fdwDetails);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioAdvance(IntPtr hmmio, ref MMIOINFO lpmmioinfo, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioAscend(IntPtr hmmio, ref MMCKINFO lpck, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioClose(IntPtr hmmio, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioCreateChunk(IntPtr hmmio, ref MMCKINFO lpck, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioDescend(IntPtr hmmio, ref MMCKINFO lpck, ref MMCKINFO lpckParent, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioFlush(IntPtr hmmio, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioGetInfo(IntPtr hmmio, ref MMIOINFO lpmmioinfo, int uFlags);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
@@ -1915,16 +1915,16 @@ namespace flier268.Win32API
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int mmioRename(string szFileName, string SzNewFileName, ref MMIOINFO lpmmioinfo, int dwRenameFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioSeek(IntPtr hmmio, int lOffset, int iOrigin);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioSendMessage(IntPtr hmmio, int uMsg, int lParam1, int lParam2);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int mmioSetBuffer(IntPtr hmmio, string pchBuffer, int cchBuffer, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmioSetInfo(IntPtr hmmio, ref MMIOINFO lpmmioinfo, int uFlags);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
@@ -1933,136 +1933,136 @@ namespace flier268.Win32API
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int mmioWrite(IntPtr hmmio, string pch, int cch);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int mmsystemGetVersion();
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int sndPlaySound(string lpszSoundName, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int timeBeginPeriod(int uPeriod);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int timeEndPeriod(int uPeriod);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int timeGetDevCaps(ref TIMECAPS lpTimeCaps, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int timeGetSystemTime(ref MMTIME lpTime, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int timeGetTime();
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int timeKillEvent(int uID);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int timeSetEvent(int uDelay, int uResolution, ref int lpFunction, int dwUser, int uFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInAddBuffer(IntPtr hWaveIn, ref WAVEHDR lpWaveInHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInClose(IntPtr hWaveIn);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInGetDevCaps(int uDeviceID, ref WAVEINCAPS lpCaps, int uSize);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int waveInGetErrorText(int err, string lpText, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInGetID(IntPtr hWaveIn, ref int lpuDeviceID);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInGetNumDevs();
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInGetPosition(IntPtr hWaveIn, ref MMTIME lpInfo, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInMessage(IntPtr hWaveIn, int msg, int dw1, int dw2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInOpen(int lphWaveIn, int uDeviceID, ref WAVEFORMAT lpFormat, int dwCallback, int dwInstance, int dwFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInPrepareHeader(IntPtr hWaveIn, ref WAVEHDR lpWaveInHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInReset(IntPtr hWaveIn);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInStart(IntPtr hWaveIn);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInStop(IntPtr hWaveIn);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveInUnprepareHeader(IntPtr hWaveIn, ref WAVEHDR lpWaveInHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutBreakLoop(IntPtr hWaveOut);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutClose(IntPtr hWaveOut);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutGetDevCaps(int uDeviceID, ref WAVEOUTCAPS lpCaps, int uSize);
 
         [DllImport("winmm", CharSet = CharSet.Unicode)]
         public static extern int waveOutGetErrorText(int err, string lpText, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutGetID(IntPtr hWaveOut, ref int lpuDeviceID);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutGetNumDevs();
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutGetPitch(IntPtr hWaveOut, ref int lpdwPitch);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutGetPlaybackRate(IntPtr hWaveOut, ref int lpdwRate);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutGetPosition(IntPtr hWaveOut, ref MMTIME lpInfo, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutGetVolume(int uDeviceID, ref int lpdwVolume);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutMessage(IntPtr hWaveOut, int msg, int dw1, int dw2);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutOpen(int lphWaveOut, int uDeviceID, ref WAVEFORMAT lpFormat, int dwCallback, int dwInstance, int dwFlags);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutPause(IntPtr hWaveOut);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutPrepareHeader(IntPtr hWaveOut, ref WAVEHDR lpWaveOutHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutReset(IntPtr hWaveOut);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutRestart(IntPtr hWaveOut);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutSetPitch(IntPtr hWaveOut, int dwPitch);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutSetPlaybackRate(IntPtr hWaveOut, int dwRate);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutSetVolume(int uDeviceID, int dwVolume);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutUnprepareHeader(IntPtr hWaveOut, ref WAVEHDR lpWaveOutHdr, int uSize);
 
-        [DllImport("winmm")]
+        [DllImport("winmm", CharSet = CharSet.Auto)]
         public static extern int waveOutWrite(IntPtr hWaveOut, ref WAVEHDR lpWaveOutHdr, int uSize);
     }
 }

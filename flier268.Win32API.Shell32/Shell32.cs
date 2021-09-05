@@ -186,10 +186,10 @@ namespace flier268.Win32API
         [DllImport("shell32", CharSet = CharSet.Unicode)]
         public static extern int DragQueryFile(IntPtr hDROP, int UINT, string lpStr, int ch);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern int DragQueryPoint(IntPtr hDROP, ref POINT lpPoint);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern int DuplicateIcon(IntPtr hInst, IntPtr hIcon);
 
         [DllImport("shell32", CharSet = CharSet.Unicode)]
@@ -204,10 +204,10 @@ namespace flier268.Win32API
         [DllImport("shell32", CharSet = CharSet.Unicode)]
         public static extern int FindExecutable(string lpFile, string lpDirectory, string lpResult);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern int SHAppBarMessage(int dwMessage, ref APPBARDATA pData);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern int SHFileOperation(ref SHFILEOPSTRUCT lpFileOp);
 
         [DllImport("shell32", CharSet = CharSet.Unicode)]
@@ -222,22 +222,22 @@ namespace flier268.Win32API
         [DllImport("shell32", CharSet = CharSet.Unicode)]
         public static extern int ShellExecute(IntPtr hwnd, string lpOperation, string lpFile, string lpParameters, string lpDirectory, int nShowCmd);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern int Shell_NotifyIcon(int dwMessage, ref NOTIFYICONDATA lpData);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern void DragAcceptFiles(IntPtr hwnd, int fAccept);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern void DragFinish(IntPtr hDrop);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern void SHFreeNameMappings(IntPtr hNameMappings);
 
         [DllImport("shell32", CharSet = CharSet.Unicode)]
         public static extern void WinExecError(IntPtr hwnd, int error, string lpstrFileName, string lpstrTitle);
 
-        [DllImport("shell32")]
+        [DllImport("shell32", CharSet = CharSet.Auto)]
         public static extern int SHBrowseForFolder(BROWSEINFO lpbi);
 
         [DllImport("shell32", CharSet = CharSet.Unicode)]

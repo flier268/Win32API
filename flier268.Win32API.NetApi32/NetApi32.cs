@@ -171,37 +171,37 @@ namespace flier268.Win32API
 
         #endregion const
 
-        [DllImport("Netapi32")]
+        [DllImport("Netapi32", CharSet = CharSet.Auto)]
         public static extern int NetApiBufferFree(int lpBuffer);
 
-        [DllImport("Netapi32")]
+        [DllImport("Netapi32", CharSet = CharSet.Auto)]
         public static extern int NetRemoteTOD(IntPtr yServer, int pBuffer);
 
-        [DllImport("Netapi32")]
+        [DllImport("Netapi32", CharSet = CharSet.Auto)]
         public static extern int NetUserChangePassword(IntPtr Domain, IntPtr User, byte OldPass, byte NewPass);
 
-        [DllImport("Netapi32")]
+        [DllImport("Netapi32", CharSet = CharSet.Auto)]
         public static extern int NetUserGetGroups(IntPtr lpServer, byte UserName, int Level, ref int lpBuffer, int PrefMaxLen, ref int lpEntriesRead, ref int lpTotalEntries);
 
-        [DllImport("Netapi32")]
+        [DllImport("Netapi32", CharSet = CharSet.Auto)]
         public static extern int NetUserGetInfo(IntPtr lpServer, byte UserName, int Level, ref int lpBuffer);
 
-        [DllImport("Netapi32")]
+        [DllImport("Netapi32", CharSet = CharSet.Auto)]
         public static extern int NetUserGetLocalGroups(IntPtr lpServer, byte UserName, int Level, int Flags, ref int lpBuffer, int MaxLen, ref int lpEntriesRead, ref int lpTotalEntries);
 
-        [DllImport("Netapi32")]
+        [DllImport("Netapi32", CharSet = CharSet.Auto)]
         public static extern int NetWkstaGetInfo(IntPtr lpServer, int Level, IntPtr lpBuffer);
 
-        [DllImport("Netapi32")]
+        [DllImport("Netapi32", CharSet = CharSet.Auto)]
         public static extern int NetWkstaUserGetInfo(IntPtr reserved, int Level, IntPtr lpBuffer);
 
-        [DllImport("netapi32")]
+        [DllImport("netapi32", CharSet = CharSet.Auto)]
         public static extern int NetUserAdd(IntPtr lpServer, int Level, ref USER_INFO_3 lpUser, ref int lpError);
 
-        [DllImport("netapi32")]
+        [DllImport("netapi32", CharSet = CharSet.Auto)]
         public static extern int NetLocalGroupDelMembers(int psServer, int psLocalGroup, int lLevel, ref LOCALGROUP_MEMBERS_INFO_0 uMember, int lMemberCount);
 
-        [DllImport("netapi32")]
+        [DllImport("netapi32", CharSet = CharSet.Auto)]
         public static extern int NetLocalGroupGetMembers(int psServer, int psLocalGroup, int lLevel, int pBuffer, int lMaxLength, int plEntriesRead, int plTotalEntries, int phResume);
     }
 }

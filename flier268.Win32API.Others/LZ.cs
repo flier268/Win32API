@@ -6,22 +6,22 @@ namespace flier268.Win32API
 {
     public abstract class LZ
     {
-        [DllImport("lz32")]
+        [DllImport("lz32", CharSet = CharSet.Auto)]
         public static extern int CopyLZFile(int n1, int n2);
 
-        [DllImport("lz32")]
+        [DllImport("lz32", CharSet = CharSet.Auto)]
         public static extern int LZStart();
 
-        [DllImport("lz32")]
+        [DllImport("lz32", CharSet = CharSet.Auto)]
         public static extern void LZDone();
 
         [DllImport("lz32", CharSet = CharSet.Unicode)]
         public static extern int GetExpandedName(string lpszSource, StringBuilder lpszBuffer);
 
-        [DllImport("lz32")]
+        [DllImport("lz32", CharSet = CharSet.Auto)]
         public static extern int LZCopy(IntPtr hfSource, IntPtr hfDest);
 
-        [DllImport("lz32")]
+        [DllImport("lz32", CharSet = CharSet.Auto)]
         public static extern int LZInit(IntPtr hfSrc);
 
         [DllImport("lz32", CharSet = CharSet.Unicode)]
@@ -30,10 +30,10 @@ namespace flier268.Win32API
         [DllImport("lz32", CharSet = CharSet.Unicode)]
         public static extern int LZRead(IntPtr hfFile, string lpvBuf, int cbread);
 
-        [DllImport("lz32")]
+        [DllImport("lz32", CharSet = CharSet.Auto)]
         public static extern int LZSeek(IntPtr hfFile, int lOffset, int nOrigin);
 
-        [DllImport("lz32")]
+        [DllImport("lz32", CharSet = CharSet.Auto)]
         public static extern void LZClose(IntPtr hfFile);
     }
 }

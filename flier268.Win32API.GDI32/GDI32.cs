@@ -1895,61 +1895,61 @@ namespace flier268.Win32API
 
         #endregion const
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int AbortDoc(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int AbortPath(IntPtr hdc);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int AddFontResource(string lpFileName);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int AngleArc(IntPtr hdc, int x, int y, int dwRadius, double eStartAngle, double eSweepAngle);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int AnimatePalette(IntPtr hPalette, int wStartIndex, int wNumEntries, PALETTEENTRY[] lpPaletteColors);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int Arc(IntPtr hdc, int X1, int Y1, int X2, int Y2, int X3, int Y3, int X4, int Y4);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ArcTo(IntPtr hdc, int X1, int Y1, int X2, int Y2, int X3, int Y3, int X4, int Y4);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int BeginPath(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int BitBlt(IntPtr hDestDC, int x, int y, int nWidth, int nHeight, IntPtr hSrcDC, int xSrc, int ySrc, int dwRop);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CancelDC(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CheckColorsInGamut(IntPtr hdc, IntPtr lpv, IntPtr lpv2, int dw);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ChoosePixelFormat(IntPtr hdc, ref PIXELFORMATDESCRIPTOR pPixelFormatDescriptor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int Chord(IntPtr hdc, int X1, int Y1, int X2, int Y2, int X3, int Y3, int X4, int Y4);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CloseEnhMetaFile(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CloseFigure(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CloseMetaFile(IntPtr hMF);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ColorMatchToTarget(IntPtr hdc, IntPtr hdc2, int dw);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CombineRgn(IntPtr hDestRgn, IntPtr hSrcRgn1, IntPtr hSrcRgn2, int nCombineMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CombineTransform(ref XFORM lpxformResult, ref XFORM lpxform1, ref XFORM lpxform2);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
@@ -1958,46 +1958,46 @@ namespace flier268.Win32API
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int CopyMetaFile(IntPtr hMF, string lpFileName);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateBitmap(int nWidth, int nHeight, int nPlanes, int nBitCount, IntPtr lpBits);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateBitmapIndirect(ref BITMAP lpBitmap);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateBrushIndirect(ref LOGBRUSH lpLogBrush);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateColorSpace(ref LOGCOLORSPACE lplogcolorspace);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateCompatibleBitmap(IntPtr hdc, int nWidth, int nHeight);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateCompatibleDC(IntPtr hdc);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int CreateDC(string lpDriverName, string lpDeviceName, string lpOutput, ref DEVMODE lpInitData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateDIBPatternBrush(IntPtr hPackedDIB, int wUsage);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateDIBPatternBrushPt(IntPtr lpPackedDIB, int iUsage);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateDIBSection(IntPtr hdc, ref BITMAPINFO pBitmapInfo, int un, ref IntPtr lplpVoid, IntPtr handle, int dw);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateDIBitmap(IntPtr hdc, ref BITMAPINFOHEADER lpInfoHeader, int dwUsage, IntPtr lpInitBits, ref BITMAPINFO lpInitInfo, int wUsage);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateDiscardableBitmap(IntPtr hdc, int nWidth, int nHeight);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateEllipticRgn(int X1, int Y1, int X2, int Y2);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateEllipticRgnIndirect(ref RECT lpRect);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
@@ -2006,13 +2006,13 @@ namespace flier268.Win32API
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int CreateFont(IntPtr h, int W, int E, int O, int W2, int I, int u, int S, int C, int OP, int CP, int Q, int PAF, string F);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateFontIndirect(ref LOGFONT lpLogFont);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateHalftonePalette(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateHatchBrush(int nIndex, int crColor);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
@@ -2021,346 +2021,346 @@ namespace flier268.Win32API
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int CreateMetaFile(string lpString);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreatePalette(ref LOGPALETTE lpLogPalette);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreatePatternBrush(IntPtr hBitmap);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreatePen(int nPenStyle, int nWidth, int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreatePenIndirect(ref LOGPEN lpLogPen);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreatePolyPolygonRgn(ref POINT lpPoint, ref int lpPolyCounts, int nCount, int nPolyFillMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreatePolygonRgn(ref POINT lpPoint, int nCount, int nPolyFillMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateRectRgn(int X1, int Y1, int X2, int Y2);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateRectRgnIndirect(ref RECT lpRect);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateRoundRectRgn(int X1, int Y1, int X2, int Y2, int X3, int Y3);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int CreateScalableFontResource(int fHidden, string lpszResourceFile, string lpszFontFile, string lpszCurrentPath);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int CreateSolidBrush(int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int DPtoLP(IntPtr hdc, ref POINT lpPoint, int nCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int DeleteColorSpace(IntPtr hcolorspace);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int DeleteDC(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int DeleteEnhMetaFile(IntPtr hemf);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int DeleteMetaFile(IntPtr hMF);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int DeleteObject(IntPtr hObject);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int DescribePixelFormat(IntPtr hdc, int n, int un, ref PIXELFORMATDESCRIPTOR lpPixelFormatDescriptor);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int DrawEscape(IntPtr hdc, int nEscape, int cbInput, string lpszInData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int Ellipse(IntPtr hdc, int X1, int Y1, int X2, int Y2);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EndDoc(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EndPage(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EndPath(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EnumEnhMetaFile(IntPtr hdc, IntPtr hemf, ref int lpEnhMetaFunc, IntPtr lpData, ref RECT lpRect);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int EnumFontFamilies(IntPtr hdc, string lpszFamily, ref int lpEnumFontFamProc, int lParam);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EnumFontFamiliesEx(IntPtr hdc, ref LOGFONT lpLogFont, ref int lpEnumFontProc, int lParam, int dw);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int EnumFonts(IntPtr hdc, string lpsz, ref int lpFontEnumProc, int lParam);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EnumICMProfiles(IntPtr hdc, int icmEnumProc, int lParam);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EnumMetaFile(IntPtr hdc, IntPtr hMetafile, ref int lpMFEnumProc, int lParam);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EnumObjects(IntPtr hdc, int n, ref int lpGOBJEnumProc, IntPtr lpVoid);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int EqualRgn(IntPtr hSrcRgn1, IntPtr hSrcRgn2);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int Escape(IntPtr hdc, int nEscape, int nCount, string lpInData, IntPtr lpOutData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ExcludeClipRect(IntPtr hdc, int X1, int Y1, int X2, int Y2);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ExtCreatePen(int dwPenStyle, int dwWidth, ref LOGBRUSH lplb, int dwStyleCount, ref int lpStyle);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ExtCreateRegion(ref XFORM lpXform, int nCount, ref RGNDATA lpRgnData);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int ExtEscape(IntPtr hdc, int nEscape, int cbInput, string lpszInData, int cbOutput, string lpszOutData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ExtFloodFill(IntPtr hdc, int x, int y, int crColor, int wFillType);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ExtSelectClipRgn(IntPtr hdc, IntPtr hRgn, int fnMode);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int ExtTextOut(IntPtr hdc, int x, int y, int wOptions, ref RECT lpRect, string lpString, int nCount, ref int lpDx);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int FillPath(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int FillRgn(IntPtr hdc, IntPtr hRgn, IntPtr hBrush);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int FixBrushOrgEx(IntPtr hdc, int n1, int n2, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int FlattenPath(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int FloodFill(IntPtr hdc, int x, int y, int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int FrameRgn(IntPtr hdc, IntPtr hRgn, IntPtr hBrush, int nWidth, int nHeight);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GdiComment(IntPtr hdc, int cbSize, byte lpData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GdiFlush();
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GdiGetBatchLimit();
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GdiSetBatchLimit(int dwLimit);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetArcDirection(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetAspectRatioFilterEx(IntPtr hdc, ref SIZE lpAspectRatio);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetBitmapBits(IntPtr hBitmap, int dwCount, IntPtr lpBits);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetBitmapDimensionEx(IntPtr hBitmap, ref SIZE lpDimension);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetBkColor(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetBkMode(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetBoundsRect(IntPtr hdc, ref RECT lprcBounds, int flags);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetBrushOrgEx(IntPtr hdc, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetCharABCWidths(IntPtr hdc, int uFirstChar, int uLastChar, ref ABC lpabc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetCharABCWidthsFloat(IntPtr hdc, int iFirstChar, int iLastChar, ref ABCFLOAT lpABCF);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetCharWidth(IntPtr hdc, int wFirstChar, int wLastChar, int[] lpBuffer);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetCharWidth32(IntPtr hdc, int iFirstChar, int iLastChar, int[] lpBuffer);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetCharWidthFloat(IntPtr hdc, int iFirstChar, int iLastChar, double[] pxBuffer);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int GetCharacterPlacement(IntPtr hdc, string lpsz, int n1, int n2, ref GCP_RESULTS lpGcpResults, int dw);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetClipBox(IntPtr hdc, ref RECT lpRect);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetClipRgn(IntPtr hdc, IntPtr hRgn);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetColorAdjustment(IntPtr hdc, ref COLORADJUSTMENT lpca);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetColorSpace(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetCurrentObject(IntPtr hdc, int uObjectType);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetCurrentPositionEx(IntPtr hdc, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetDCOrgEx(IntPtr hdc, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetDIBColorTable(IntPtr hdc, int un1, int un2, ref RGBQUAD pRGBQuad);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetDIBits(int aHDC, IntPtr hBitmap, int nStartScan, int nNumScans, IntPtr lpBits, ref BITMAPINFO lpBI, int wUsage);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetDeviceCaps(IntPtr hdc, int nIndex);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetDeviceGammaRamp(IntPtr hdc, IntPtr lpv);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int GetEnhMetaFile(string lpszMetaFile);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetEnhMetaFileBits(IntPtr hemf, int cbBuffer, byte lpbBuffer);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int GetEnhMetaFileDescription(IntPtr hemf, int cchBuffer, string lpszDescription);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetEnhMetaFileHeader(IntPtr hemf, int cbBuffer, ref ENHMETAHEADER lpemh);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetEnhMetaFilePaletteEntries(IntPtr hemf, int cEntries, ref PALETTEENTRY lppe);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetFontData(IntPtr hdc, int dwTable, int dwOffset, IntPtr lpvBuffer, int cbData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetFontLanguageInfo(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetGlyphOutline(IntPtr hdc, int uChar, int fuFormat, ref GLYPHMETRICS lpgm, int cbBuffer, IntPtr lpBuffer, ref MAT2 lpmat2);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetGraphicsMode(IntPtr hdc);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int GetICMProfile(IntPtr hdc, int dw, string lpStr);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetKerningPairs(IntPtr hdc, int cPairs, ref KERNINGPAIR lpkrnpair);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetLogColorSpace(IntPtr hcolorspace, ref LOGCOLORSPACE lplogcolorspace, int dw);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetMapMode(IntPtr hdc);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int GetMetaFile(string lpFileName);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetMetaFileBitsEx(IntPtr hMF, int nSize, IntPtr lpvData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetMetaRgn(IntPtr hdc, IntPtr hRgn);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetMiterLimit(IntPtr hdc, double peLimit);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetNearestColor(IntPtr hdc, int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetNearestPaletteIndex(IntPtr hPalette, int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetObject(IntPtr hObject, int nCount, IntPtr lpObject);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetObjectType(IntPtr hgdiobj);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetOutlineTextMetrics(IntPtr hdc, int cbData, ref OUTLINETEXTMETRIC lpotm);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetPaletteEntries(IntPtr hPalette, int wStartIndex, int wNumEntries, ref PALETTEENTRY lpPaletteEntries);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetPath(IntPtr hdc, ref POINT lpPoint, byte lpTypes, int nSize);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetPixel(IntPtr hdc, int x, int y);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetPixelFormat(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetPolyFillMode(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetROP2(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetRasterizerCaps(ref RASTERIZER_STATUS lpraststat, int cb);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetRegionData(IntPtr hRgn, int dwCount, ref RGNDATA lpRgnData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetRgnBox(IntPtr hRgn, ref RECT lpRect);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetStockObject(int nIndex);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetStretchBltMode(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetSystemPaletteEntries(IntPtr hdc, int wStartIndex, int wNumEntries, ref PALETTEENTRY lpPaletteEntries);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetSystemPaletteUse(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetTextAlign(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetTextCharacterExtra(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetTextCharset(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetTextCharsetInfo(IntPtr hdc, ref FONTSIGNATURE lpSig, int dwFlags);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetTextColor(IntPtr hdc);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
@@ -2375,331 +2375,331 @@ namespace flier268.Win32API
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int GetTextFace(IntPtr hdc, int nCount, string lpFacename);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetTextMetrics(IntPtr hdc, ref TEXTMETRIC lpMetrics);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetViewportExtEx(IntPtr hdc, ref SIZE lpSize);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetViewportOrgEx(IntPtr hdc, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetWinMetaFileBits(IntPtr hemf, int cbBuffer, byte lpbBuffer, int fnMapMode, IntPtr hdcRef);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetWindowExtEx(IntPtr hdc, ref SIZE lpSize);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetWindowOrgEx(IntPtr hdc, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int GetWorldTransform(IntPtr hdc, ref XFORM lpXform);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int IntersectClipRect(IntPtr hdc, int X1, int Y1, int X2, int Y2);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int InvertRgn(IntPtr hdc, IntPtr hRgn);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int LPtoDP(IntPtr hdc, ref POINT lpPoint, int nCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int LineDDA(int n1, int n2, int n3, int n4, ref int lpLineDDAProc, int lParam);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int LineTo(IntPtr hdc, int x, int y);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int MaskBlt(IntPtr hdcDest, int nXDest, int nYDest, int nWidth, int nHeight, IntPtr hdcSrc, int nXSrc, int nYSrc, IntPtr hbmMask, int xMask, int yMask, int dwRop);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ModifyWorldTransform(IntPtr hdc, ref XFORM lpXform, int iMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int MoveToEx(IntPtr hdc, int x, int y, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int OffsetClipRgn(IntPtr hdc, int x, int y);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int OffsetRgn(IntPtr hRgn, int x, int y);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int OffsetViewportOrgEx(IntPtr hdc, int nX, int nY, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int OffsetWindowOrgEx(IntPtr hdc, int nX, int nY, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PaintRgn(IntPtr hdc, IntPtr hRgn);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PatBlt(IntPtr hdc, int x, int y, int nWidth, int nHeight, int dwRop);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PathToRegion(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int Pie(IntPtr hdc, int X1, int Y1, int X2, int Y2, int X3, int Y3, int X4, int Y4);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PlayEnhMetaFile(IntPtr hdc, IntPtr hemf, ref RECT lpRect);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PlayEnhMetaFileRecord(IntPtr hdc, ref HANDLETABLE lpHandletable, ref ENHMETARECORD lpEnhMetaRecord, int nHandles);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PlayMetaFile(IntPtr hdc, IntPtr hMF);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PlayMetaFileRecord(IntPtr hdc, ref HANDLETABLE lpHandletable, ref METARECORD lpMetaRecord, int nHandles);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PlgBlt(IntPtr hdcDest, ref POINT lpPoint, IntPtr hdcSrc, int nXSrc, int nYSrc, int nWidth, int nHeight, IntPtr hbmMask, int xMask, int yMask);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PolyBezier(IntPtr hdc, ref POINT lppt, int cPoints);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PolyBezierTo(IntPtr hdc, ref POINT lppt, int cCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PolyDraw(IntPtr hdc, ref POINT lppt, byte lpbTypes, int cCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PolyPolygon(IntPtr hdc, ref POINT lpPoint, ref int lpPolyCounts, int nCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PolyPolyline(IntPtr hdc, ref POINT lppt, ref int lpdwPolyPoints, int cCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PolyTextOut(IntPtr hdc, ref POLYTEXT pptxt, int cStrings);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int Polygon(IntPtr hdc, ref POINT lpPoint, int nCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int Polyline(IntPtr hdc, ref POINT lpPoint, int nCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PolylineTo(IntPtr hdc, ref POINT lppt, int cCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PtInRegion(IntPtr hRgn, int x, int y);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int PtVisible(IntPtr hdc, int x, int y);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int RealizePalette(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int RectInRegion(IntPtr hRgn, ref RECT lpRect);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int RectVisible(IntPtr hdc, ref RECT lpRect);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int Rectangle(IntPtr hdc, int X1, int Y1, int X2, int Y2);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int RemoveFontResource(string lpFileName);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ResetDC(IntPtr hdc, ref DEVMODE lpInitData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ResizePalette(IntPtr hPalette, int nNumEntries);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int RestoreDC(IntPtr hdc, int nSavedDC);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int RoundRect(IntPtr hdc, int X1, int Y1, int X2, int Y2, int X3, int Y3);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SaveDC(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ScaleViewportExtEx(IntPtr hdc, int nXnum, int nXdenom, int nYnum, int nYdenom, ref SIZE lpSize);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int ScaleWindowExtEx(IntPtr hdc, int nXnum, int nXdenom, int nYnum, int nYdenom, ref SIZE lpSize);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SelectClipPath(IntPtr hdc, int iMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SelectClipRgn(IntPtr hdc, IntPtr hRgn);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SelectObject(IntPtr hdc, IntPtr hObject);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SelectPalette(IntPtr hdc, IntPtr hPalette, int bForceBackground);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetAbortProc(IntPtr hdc, ref int lpAbortProc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetArcDirection(IntPtr hdc, int ArcDirection);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetBitmapBits(IntPtr hBitmap, int dwCount, IntPtr lpBits);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetBitmapDimensionEx(IntPtr hbm, int nX, int nY, ref SIZE lpSize);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetBkColor(IntPtr hdc, int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetBkMode(IntPtr hdc, int nBkMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetBoundsRect(IntPtr hdc, ref RECT lprcBounds, int flags);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetBrushOrgEx(IntPtr hdc, int nXOrg, int nYOrg, ref POINT lppt);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetColorAdjustment(IntPtr hdc, ref COLORADJUSTMENT lpca);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetColorSpace(IntPtr hdc, IntPtr hcolorspace);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetDIBColorTable(IntPtr hdc, int un1, int un2, ref RGBQUAD pcRGBQuad);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetDIBits(IntPtr hdc, IntPtr hBitmap, int nStartScan, int nNumScans, IntPtr lpBits, ref BITMAPINFO lpBI, int wUsage);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetDIBitsToDevice(IntPtr hdc, int x, int y, int dx, int dy, int SrcX, int SrcY, int Scan, int NumScans, IntPtr Bits, BITMAPINFO BitsInfo, int wUsage);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetDeviceGammaRamp(IntPtr hdc, IntPtr lpv);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetEnhMetaFileBits(int cbBuffer, byte lpData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetGraphicsMode(IntPtr hdc, int iMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetICMMode(IntPtr hdc, int n);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int SetICMProfile(IntPtr hdc, string lpStr);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetMapMode(IntPtr hdc, int nMapMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetMapperFlags(IntPtr hdc, int dwFlag);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetMetaFileBitsEx(int nSize, byte lpData);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetMetaRgn(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetMiterLimit(IntPtr hdc, double eNewLimit, double peOldLimit);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetPaletteEntries(IntPtr hPalette, int wStartIndex, int wNumEntries, ref PALETTEENTRY lpPaletteEntries);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetPixel(IntPtr hdc, int x, int y, int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetPixelFormat(IntPtr hdc, int n, ref PIXELFORMATDESCRIPTOR pcPixelFormatDescriptor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetPixelV(IntPtr hdc, int x, int y, int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetPolyFillMode(IntPtr hdc, int nPolyFillMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetROP2(IntPtr hdc, int nDrawMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetRectRgn(IntPtr hRgn, int X1, int Y1, int X2, int Y2);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetStretchBltMode(IntPtr hdc, int nStretchMode);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetSystemPaletteUse(IntPtr hdc, int wUsage);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetTextAlign(IntPtr hdc, int wFlags);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetTextCharacterExtra(IntPtr hdc, int nCharExtra);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetTextColor(IntPtr hdc, int crColor);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetTextJustification(IntPtr hdc, int nBreakExtra, int nBreakCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetViewportExtEx(IntPtr hdc, int nX, int nY, ref SIZE lpSize);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetViewportOrgEx(IntPtr hdc, int nX, int nY, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetWinMetaFileBits(int cbBuffer, byte lpbBuffer, IntPtr hdcRef, ref METAFILEPICT lpmfp);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetWindowExtEx(IntPtr hdc, int nX, int nY, ref SIZE lpSize);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetWindowOrgEx(IntPtr hdc, int nX, int nY, ref POINT lpPoint);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SetWorldTransform(IntPtr hdc, ref XFORM lpXform);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int StartDoc(IntPtr hdc, ref DOCINFO lpdi);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int StartPage(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int StretchBlt(IntPtr hdc, int x, int y, int nWidth, int nHeight, IntPtr hSrcDC, int xSrc, int ySrc, int nSrcWidth, int nSrcHeight, int dwRop);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int StretchDIBits(IntPtr hdc, int x, int y, int dx, int dy, int SrcX, int SrcY, int wSrcWidth, int wSrcHeight, IntPtr lpBits, ref BITMAPINFO lpBitsInfo, int wUsage, int dwRop);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int StrokeAndFillPath(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int StrokePath(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int SwapBuffers(IntPtr hdc);
 
         [DllImport("gdi32", CharSet = CharSet.Unicode)]
         public static extern int TextOut(IntPtr hdc, int x, int y, string lpString, int nCount);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int TranslateCharsetInfo(int lpSrc, ref CHARSETINFO lpcs, int dwFlags);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int UnrealizeObject(IntPtr hObject);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int UpdateColors(IntPtr hdc);
 
-        [DllImport("gdi32")]
+        [DllImport("gdi32", CharSet = CharSet.Auto)]
         public static extern int WidenPath(IntPtr hdc);
     }
 }

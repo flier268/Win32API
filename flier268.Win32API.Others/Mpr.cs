@@ -18,16 +18,16 @@ namespace flier268.Win32API
         [DllImport("mpr", CharSet = CharSet.Unicode)]
         public static extern int WNetCancelConnection2(string lpName, int dwFlags, int fForce);
 
-        [DllImport("mpr")]
+        [DllImport("mpr", CharSet = CharSet.Auto)]
         public static extern int WNetCloseEnum(IntPtr hEnum);
 
-        [DllImport("mpr")]
+        [DllImport("mpr", CharSet = CharSet.Auto)]
         public static extern int WNetConnectionDialog(IntPtr hwnd, int dwType);
 
-        [DllImport("mpr")]
+        [DllImport("mpr", CharSet = CharSet.Auto)]
         public static extern int WNetDisconnectDialog(IntPtr hwnd, int dwType);
 
-        [DllImport("mpr")]
+        [DllImport("mpr", CharSet = CharSet.Auto)]
         public static extern int WNetEnumResource(IntPtr hEnum, ref int lpcCount, ref NETRESOURCE lpBuffer, ref int lpBufferSize);
 
         [DllImport("mpr", CharSet = CharSet.Unicode)]
@@ -39,7 +39,7 @@ namespace flier268.Win32API
         [DllImport("mpr", CharSet = CharSet.Unicode)]
         public static extern int WNetGetUser(string lpName, StringBuilder lpUserName, ref int lpnLength);
 
-        [DllImport("mpr")]
+        [DllImport("mpr", CharSet = CharSet.Auto)]
         public static extern int WNetOpenEnum(int dwScope, int dwType, int dwUsage, ref NETRESOURCE lpNetResource, ref int lphEnum);
     }
 }

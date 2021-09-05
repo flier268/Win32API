@@ -2289,46 +2289,46 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern void OutputDebugString(string lpszOutputString);
 
-        [DllImport("KERNEL32")]
+        [DllImport("KERNEL32", CharSet = CharSet.Auto)]
         public static extern int ConvertDefaultLocale(int Locale);
 
-        [DllImport("KERNEL32")]
+        [DllImport("KERNEL32", CharSet = CharSet.Auto)]
         public static extern int EnumDateFormats(int lpDateFmtEnumProc, int Locale, int dwFlags);
 
-        [DllImport("KERNEL32")]
+        [DllImport("KERNEL32", CharSet = CharSet.Auto)]
         public static extern int EnumSystemCodePages(int lpCodePageEnumProc, int dwFlags);
 
-        [DllImport("KERNEL32")]
+        [DllImport("KERNEL32", CharSet = CharSet.Auto)]
         public static extern int EnumSystemLocales(int lpLocaleEnumProc, int dwFlags);
 
-        [DllImport("KERNEL32")]
+        [DllImport("KERNEL32", CharSet = CharSet.Auto)]
         public static extern int EnumTimeFormats(int lpTimeFmtEnumProc, int Locale, int dwFlags);
 
-        [DllImport("KERNEL32")]
+        [DllImport("KERNEL32", CharSet = CharSet.Auto)]
         public static extern int GetThreadLocale();
 
-        [DllImport("KERNEL32")]
+        [DllImport("KERNEL32", CharSet = CharSet.Auto)]
         public static extern int IsValidLocale(int Locale, int dwFlags);
 
-        [DllImport("KERNEL32")]
+        [DllImport("KERNEL32", CharSet = CharSet.Auto)]
         public static extern void ZeroMemory(IntPtr dest, int numBytes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern COORD GetLargestConsoleWindowSize(IntPtr hConsoleOutput);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int AllocConsole();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int BackupRead(IntPtr hFile, byte lpBuffer, int nNumberOfBytesToRead, ref int lpNumberOfBytesRead, int bAbort, int bProcessSecurity, IntPtr lpContext);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int BackupSeek(IntPtr hFile, int dwLowBytesToSeek, int dwHighBytesToSeek, ref int lpdwLowByteSeeked, ref int lpdwHighByteSeeked, ref int lpContext);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int BackupWrite(IntPtr hFile, byte lpBuffer, int nNumberOfBytesToWrite, ref int lpNumberOfBytesWritten, int bAbort, int bProcessSecurity, ref int lpContext);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int Beep(int dwFreq, int dwDuration);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2343,34 +2343,34 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int CallNamedPipe(string lpNamedPipeName, IntPtr lpInBuffer, int nInBufferSize, IntPtr lpOutBuffer, int nOutBufferSize, ref int lpBytesRead, int nTimeOut);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ClearCommBreak(int nCid);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ClearCommError(IntPtr hFile, ref int lpErrors, ref COMSTAT lpStat);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int CloseHandle(IntPtr hObject);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int CommConfigDialog(string lpszName, IntPtr hwnd, ref COMMCONFIG lpCC);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int CompareFileTime(ref FILETIME lpFileTime1, ref FILETIME lpFileTime2);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int CompareString(int Locale, int dwCmpFlags, string lpString1, int cchCount1, string lpString2, int cchCount2);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ConnectNamedPipe(IntPtr hNamedPipe, ref OVERLAPPED lpOverlapped);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ContinueDebugEvent(int dwProcessId, int dwThreadId, int dwContinueStatus);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int CopyFile(string lpExistingFileName, string lpNewFileName, int bFailIfExists);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int CreateConsoleScreenBuffer(int dwDesiredAccess, int dwShareMode, ref SECURITY_ATTRIBUTES lpSecurityAttributes, int dwFlags, IntPtr lpScreenBufferData);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2388,7 +2388,7 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int CreateFileMapping(IntPtr hFile, ref SECURITY_ATTRIBUTES lpFileMappigAttributes, int flProtect, int dwMaximumSizeHigh, int dwMaximumSizeLow, string lpName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int CreateIoCompletionPort(int FileHandle, int ExistingCompletionPort, int CompletionKey, int NumberOfConcurrentThreads);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2400,25 +2400,25 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int CreateNamedPipe(string lpName, int dwOpenMode, int dwPipeMode, int nMaxInstances, int nOutBufferSize, int nInBufferSize, int nDefaultTimeOut, ref SECURITY_ATTRIBUTES lpSecurityAttributes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int CreatePipe(int phReadPipe, int phWritePipe, ref SECURITY_ATTRIBUTES lpPipeAttributes, int nSize);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int CreateProcess(string lpApplicationName, string lpCommandLine, ref SECURITY_ATTRIBUTES lpProcessAttributes, ref SECURITY_ATTRIBUTES lpThreadAttributes, int bInheritHandles, int dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDriectory, ref STARTUPINFO lpStartupInfo, ref PROCESS_INFORMATION lpProcessInformation);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int CreateRemoteThread(IntPtr hProcess, ref SECURITY_ATTRIBUTES lpThreadAttributes, int dwStackSize, ref int lpStartAddress, IntPtr lpParameter, int dwCreationFlags, ref int lpThreadId);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int CreateSemaphore(ref SECURITY_ATTRIBUTES lpSemaphoreAttributes, int lInitialCount, int lMaximumCount, string lpName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int CreateTapePartition(IntPtr hDevice, int dwPartitionMethod, int dwCount, int dwSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int CreateThread(ref SECURITY_ATTRIBUTES lpThreadAttributes, int dwStackSize, ref int lpStartAddress, IntPtr lpParameter, int dwCreationFlags, ref int lpThreadId);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int DebugActiveProcess(int dwProcessId);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2427,25 +2427,25 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int DeleteFile(string lpFileName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int DeviceIoControl(IntPtr hDevice, int dwIoControlCode, IntPtr lpInBuffer, int nInBufferSize, IntPtr lpOutBuffer, int nOutBufferSize, ref int lpBytesReturned, ref OVERLAPPED lpOverlapped);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int DisableThreadLibraryCalls(IntPtr hLibModule);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int DisconnectNamedPipe(IntPtr hNamedPipe);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int DosDateTimeToFileTime(int wFatDate, int wFatTime, ref FILETIME lpFileTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int DuplicateHandle(IntPtr hSourceProcessHandle, IntPtr hSourceHandle, IntPtr hTargetProcessHandle, ref int lpTargetHandle, int dwDesiredAccess, int bInheritHandle, int dwOptions);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int EndUpdateResource(IntPtr hUpdate, int fDiscard);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int EnumCalendarInfo(int lpCalInfoEnumProc, int Locale, int Calendar, int CalType);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2454,37 +2454,37 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int EnumResourceNames(IntPtr hModule, string lpType, ref int lpEnumFunc, int lParam);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int EnumResourceTypes(IntPtr hModule, ref int lpEnumFunc, int lParam);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int EraseTape(IntPtr hDevice, int dwEraseType, int bimmediate);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int EscapeCommFunction(int nCid, int nFunc);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int ExpandEnvironmentStrings(string lpSrc, string lpDst, int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FileTimeToDosDateTime(ref FILETIME lpFileTime, ref int lpFatDate, ref int lpFatTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FileTimeToLocalFileTime(ref FILETIME lpFileTime, ref FILETIME lpLocalFileTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FileTimeToSystemTime(ref FILETIME lpFileTime, ref SYSTEMTIME lpSystemTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FillConsoleOutputAttribute(IntPtr hConsoleOutput, int wAttribute, int nLength, COORD dwWriteCoord, ref int lpNumberOfAttrsWritten);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FillConsoleOutputCharacter(IntPtr hConsoleOutput, byte cCharacter, int nLength, COORD dwWriteCoord, ref int lpNumberOfCharsWritten);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FindClose(IntPtr hFindFile);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FindCloseChangeNotification(IntPtr hChangeHandle);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2493,10 +2493,10 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int FindFirstFile(string lpFileName, WIN32_FIND_DATA lpFindFileData);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FindNextChangeNotification(IntPtr hChangeHandle);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FindNextFile(IntPtr hFindFile, WIN32_FIND_DATA lpFindFileData);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2505,16 +2505,16 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int FindResourceEx(IntPtr hModule, string lpType, string lpName, int wLanguage);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FlushConsoleInputBuffer(IntPtr hConsoleInput);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FlushFileBuffers(IntPtr hFile);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FlushInstructionCache(IntPtr hProcess, IntPtr lpBaseAddress, int dwSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FlushViewOfFile(IntPtr lpBaseAddress, int dwNumberOfBytesToFlush);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2523,49 +2523,49 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int FormatMessage(int dwFlags, IntPtr lpSource, int dwMessageId, int dwLanguageId, string lpBuffer, int nSize, int Arguments);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FreeConsole();
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int FreeEnvironmentStrings(string lpsz);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FreeLibrary(IntPtr hLibModule);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int FreeResource(IntPtr hResData);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GenerateConsoleCtrlEvent(int dwCtrlEvent, int dwProcessGroupId);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetACP();
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetBinaryType(string lpApplicationName, ref int lpBinaryType);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCPInfo(int CodePage, ref CPINFO lpCPInfo);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCommConfig(IntPtr hCommDev, ref COMMCONFIG lpCC, ref int lpdwSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCommMask(IntPtr hFile, ref int lpEvtMask);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCommModemStatus(IntPtr hFile, ref int lpModemStat);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCommProperties(IntPtr hFile, ref COMMPROP lpCommProp);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCommState(int nCid, ref DCB lpDCB);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCommTimeouts(IntPtr hFile, ref COMMTIMEOUTS lpCommTimeouts);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCommandLine();
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2574,19 +2574,19 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetComputerName(string lpBuffer, int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetConsoleCP();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetConsoleCursorInfo(IntPtr hConsoleOutput, ref CONSOLE_CURSOR_INFO lpConsoleCursorInfo);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetConsoleMode(IntPtr hConsoleHandle, ref int lpMode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetConsoleOutputCP();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetConsoleScreenBufferInfo(IntPtr hConsoleOutput, ref CONSOLE_SCREEN_BUFFER_INFO lpConsoleScreenBufferInfo);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2598,19 +2598,19 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetCurrentDirectory(int nBufferLength, string lpBuffer);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCurrentProcess();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCurrentProcessId();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCurrentThread();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCurrentThreadId();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetCurrentTime();
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2628,34 +2628,34 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetEnvironmentVariable(string lpName, string lpBuffer, int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetExitCodeProcess(IntPtr hProcess, ref int lpExitCode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetExitCodeThread(IntPtr hThread, ref int lpExitCode);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetFileAttributes(string lpFileName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetFileInformationByHandle(IntPtr hFile, ref BY_HANDLE_FILE_INFORMATION lpFileInformation);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetFileSize(IntPtr hFile, ref int lpFileSizeHigh);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetFileTime(IntPtr hFile, ref FILETIME lpCreationTime, ref FILETIME lpLastAccessTime, ref FILETIME lpLastWriteTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetFileType(IntPtr hFile);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetFullPathName(string lpFileName, int nBufferLength, StringBuilder lpBuffer, string lpFilePart);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetHandleInformation(IntPtr hObject, ref int lpdwFlags);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetLastError();
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2664,10 +2664,10 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetLogicalDriveStrings(int nBufferLength, StringBuilder lpBuffer);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetLogicalDrives();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetMailslotInfo(IntPtr hMailslot, ref int lpMaxMessageSize, ref int lpNextSize, ref int lpMessageCount, ref int lpReadTimeout);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2679,25 +2679,25 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetNamedPipeHandleState(IntPtr hNamedPipe, ref int lpState, ref int lpCurInstances, ref int lpMaxCollectionCount, ref int lpCollectDataTimeout, string lpUserName, int nMaxUserNameSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetNamedPipeInfo(IntPtr hNamedPipe, ref int lpFlags, ref int lpOutBufferSize, ref int lpInBufferSize, ref int lpMaxInstances);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetNumberFormat(int Locale, int dwFlags, string lpValue, ref NUMBERFMT lpFormat, string lpNumberStr, int cchNumber);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetNumberOfConsoleInputEvents(IntPtr hConsoleInput, ref int lpNumberOfEvents);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetNumberOfConsoleMouseButtons(int lpNumberOfMouseButtons);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetOEMCP();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetOverlappedResult(IntPtr hFile, ref OVERLAPPED lpOverlapped, ref int lpNumberOfBytesTransferred, int bWait);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetPriorityClass(IntPtr hProcess);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2712,22 +2712,22 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetPrivateProfileString(string lpApplicationName, string lpKeyName, string lpDefault, StringBuilder lpReturnedString, int nSize, string lpFileName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetProcessAffinityMask(IntPtr hProcess, ref int lpProcessAffinityMask, int SystemAffinityMask);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetProcessHeap();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetProcessHeaps(int NumberOfHeaps, int ProcessHeaps);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetProcessShutdownParameters(int lpdwLevel, ref int lpdwFlags);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetProcessTimes(IntPtr hProcess, ref FILETIME lpCreationTime, ref FILETIME lpExitTime, ref FILETIME lpKernelTime, ref FILETIME lpUserTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetProcessWorkingSetSize(IntPtr hProcess, ref int lpMinimumWorkingSetSize, ref int lpMaximumWorkingSetSize);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2739,13 +2739,13 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetProfileString(string lpAppName, string lpKeyName, string lpDefault, StringBuilder lpReturnedString, int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetQueuedCompletionStatus(int CompletionPort, ref int lpNumberOfBytesTransferred, ref int lpCompletionKey, ref int lpOverlapped, int dwMilliseconds);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetShortPathName(string lpszLongPath, string lpszShortPath, int cchBuffer);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetStdHandle(int nStdHandle);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2757,28 +2757,28 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetStringTypeW(int dwInfoType, string lpSrcStr, int cchSrc, short lpCharType);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetSystemDefaultLCID();
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetSystemDirectory(StringBuilder lpBuffer, int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetSystemPowerStatus(ref SYSTEM_POWER_STATUS lpSystemPowerStatus);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetSystemTimeAdjustment(int lpTimeAdjustment, ref int lpTimeIncrement, ref int lpTimeAdjustmentDisabled);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void GetSystemTimeAsFileTime(ref FILETIME lpSystemTimeAsFileTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetTapeParameters(IntPtr hDevice, int dwOperation, ref int lpdwSize, IntPtr lpTapeInformation);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetTapePosition(IntPtr hDevice, int dwPositionType, ref int lpdwPartition, ref int lpdwOffsetLow, ref int lpdwOffsetHigh);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetTapeStatus(IntPtr hDevice);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2787,34 +2787,34 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetTempPath(int nBufferLength, StringBuilder lpBuffer);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetThreadContext(IntPtr hThread, ref CONTEXT lpContext);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetThreadPriority(IntPtr hThread);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetThreadSelectorEntry(IntPtr hThread, int dwSelector, ref LDT_ENTRY lpSelectorEntry);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetThreadTimes(IntPtr hThread, ref FILETIME lpCreationTime, ref FILETIME lpExitTime, ref FILETIME lpKernelTime, ref FILETIME lpUserTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetTickCount();
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetTimeFormat(int Locale, int dwFlags, ref SYSTEMTIME lpTime, string lpFormat, string lpTimeStr, int cchTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetTimeZoneInformation(ref TIME_ZONE_INFORMATION lpTimeZoneInformation);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetUserDefaultLCID();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetVersion();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetVersionEx(ref OSVERSIONINFO lpVersionInformation);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2823,106 +2823,106 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GetWindowsDirectory(StringBuilder lpBuffer, int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalAlloc(int wFlags, int dwBytes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalCompact(int dwMinFree);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalFlags(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalFree(IntPtr hMem);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int GlobalGetAtomName(short nAtom, string lpBuffer, int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalHandle(IntPtr wMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalLock(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalReAlloc(IntPtr hMem, int dwBytes, int wFlags);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalSize(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalUnWire(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalUnlock(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GlobalWire(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapAlloc(IntPtr hHeap, int dwFlags, int dwBytes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapCompact(IntPtr hHeap, int dwFlags);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapCreate(int flOptions, int dwInitialSize, int dwMaximumSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapDestroy(IntPtr hHeap);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapFree(IntPtr hHeap, int dwFlags, IntPtr lpMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapLock(IntPtr hHeap);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapReAlloc(IntPtr hHeap, int dwFlags, IntPtr lpMem, int dwBytes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapSize(IntPtr hHeap, int dwFlags, IntPtr lpMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapUnlock(IntPtr hHeap);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int HeapValidate(IntPtr hHeap, int dwFlags, IntPtr lpMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int InitAtomTable(int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int InterlockedDecrement(int lpAddend);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int InterlockedExchange(int Target, int Value);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int InterlockedIncrement(int lpAddend);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int IsBadCodePtr(int lpfn);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int IsBadHugeReadPtr(IntPtr lp, int ucb);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int IsBadHugeWritePtr(IntPtr lp, int ucb);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int IsBadReadPtr(IntPtr lp, int ucb);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int IsBadStringPtr(string lpsz, int ucchMax);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int IsBadWritePtr(IntPtr lp, int ucb);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int IsDBCSLeadByte(byte bTestChar);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int IsValidCodePage(int CodePage);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2937,55 +2937,55 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int LoadModule(string lpModuleName, IntPtr lpParameterBlock);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LoadResource(IntPtr hInstance, IntPtr hResInfo);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalAlloc(int wFlags, int wBytes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalCompact(int uMinFree);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalFileTimeToFileTime(ref FILETIME lpLocalFileTime, ref FILETIME lpFileTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalFlags(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalFree(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalHandle(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalLock(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalReAlloc(IntPtr hMem, int wBytes, int wFlags);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalShrink(IntPtr hMem, int cbNewSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalSize(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LocalUnlock(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LockFile(IntPtr hFile, int dwFileOffsetLow, int dwFileOffsetHigh, int nNumberOfBytesToLockLow, int nNumberOfBytesToLockHigh);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LockFileEx(IntPtr hFile, int dwFlags, int dwReserved, int nNumberOfBytesToLockLow, int nNumberOfBytesToLockHigh, ref OVERLAPPED lpOverlapped);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int LockResource(IntPtr hResData);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int MapViewOfFile(IntPtr hFileMappingObject, int dwDesiredAccess, int dwFileOffsetHigh, int dwFileOffsetLow, int dwNumberOfBytesToMap);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int MapViewOfFileEx(IntPtr hFileMappingObject, int dwDesiredAccess, int dwFileOffsetHigh, int dwFileOffsetLow, int dwNumberOfBytesToMap, IntPtr lpBaseAddress);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -2994,7 +2994,7 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int MoveFileEx(string lpExistingFileName, string lpNewFileName, int dwFlags);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int MulDiv(int nNumber, int nNumerator, int nDenominator);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -3012,124 +3012,124 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int OpenMutex(int dwDesiredAccess, int bInheritHandle, string lpName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int OpenProcess(int dwDesiredAccess, int bInheritHandle, int dwProcessId);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int OpenSemaphore(int dwDesiredAccess, int bInheritHandle, string lpName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int PeekNamedPipe(IntPtr hNamedPipe, IntPtr lpBuffer, int nBufferSize, ref int lpBytesRead, ref int lpTotalBytesAvail, ref int lpBytesLeftThisMessage);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int PrepareTape(IntPtr hDevice, int dwOperation, int bimmediate);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int PulseEvent(IntPtr hEvent);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int PurgeComm(IntPtr hFile, int dwFlags);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int QueryDosDevice(string lpDeviceName, string lpTargetPath, int ucchMax);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int QueryPerformanceCounter(ref LARGE_INTEGER lpPerformanceCount);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int QueryPerformanceFrequency(ref LARGE_INTEGER lpFrequency);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ReadConsole(IntPtr hConsoleInput, IntPtr lpBuffer, int nNumberOfCharsToRead, ref int lpNumberOfCharsRead, IntPtr lpReserved);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ReadConsoleOutput(IntPtr hConsoleOutput, ref CHAR_INFO lpBuffer, COORD dwBufferSize, COORD dwBufferCoord, ref SMALL_RECT lpReadRegion);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ReadConsoleOutputAttribute(IntPtr hConsoleOutput, ref int lpAttribute, int nLength, COORD dwReadCoord, ref int lpNumberOfAttrsRead);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int ReadConsoleOutputCharacter(IntPtr hConsoleOutput, string lpCharacter, int nLength, COORD dwReadCoord, ref int lpNumberOfCharsRead);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ReadFile(IntPtr hFile, IntPtr lpBuffer, int nNumberOfBytesToRead, ref int lpNumberOfBytesRead, ref OVERLAPPED lpOverlapped);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ReadFileEx(IntPtr hFile, IntPtr lpBuffer, int nNumberOfBytesToRead, ref OVERLAPPED lpOverlapped, ref int lpCompletionRoutine);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ReadProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, IntPtr lpBuffer, int nSize, ref int lpNumberOfBytesWritten);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ReleaseMutex(IntPtr hMutex);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ReleaseSemaphore(IntPtr hSemaphore, int lReleaseCount, ref int lpPreviousCount);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int RemoveDirectory(string lpPathName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ResetEvent(IntPtr hEvent);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ResumeThread(IntPtr hThread);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int ScrollConsoleScreenBuffer(IntPtr hConsoleOutput, ref SMALL_RECT lpScrollRectangle, ref SMALL_RECT lpClipRectangle, COORD dwDestinationOrigin, ref CHAR_INFO lpFill);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int SearchPath(string lpPath, string lpFileName, string lpExtension, int nBufferLength, string lpBuffer, string lpFilePart);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetCommBreak(int nCid);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetCommConfig(IntPtr hCommDev, ref COMMCONFIG lpCC, int dwSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetCommMask(IntPtr hFile, int dwEvtMask);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetCommState(IntPtr hCommDev, ref DCB lpDCB);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetCommTimeouts(IntPtr hFile, ref COMMTIMEOUTS lpCommTimeouts);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int SetComputerName(string lpComputerName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleActiveScreenBuffer(IntPtr hConsoleOutput);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleCP(int wCodePageID);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleCtrlHandler(int HandlerRoutine, int Add);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleCursorInfo(IntPtr hConsoleOutput, ref CONSOLE_CURSOR_INFO lpConsoleCursorInfo);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleCursorPosition(IntPtr hConsoleOutput, COORD dwCursorPosition);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleMode(IntPtr hConsoleHandle, int dwMode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleOutputCP(int wCodePageID);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleScreenBufferSize(IntPtr hConsoleOutput, COORD dwSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleTextAttribute(IntPtr hConsoleOutput, int wAttributes);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int SetConsoleTitle(string lpConsoleTitle);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetConsoleWindowInfo(IntPtr hConsoleOutput, int bAbsolute, ref SMALL_RECT lpConsoleWindow);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -3138,142 +3138,142 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int SetDefaultCommConfig(string lpszName, ref COMMCONFIG lpCC, int dwSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetEndOfFile(IntPtr hFile);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int SetEnvironmentVariable(string lpName, string lpValue);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetErrorMode(int wMode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetEvent(IntPtr hEvent);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int SetFileAttributes(string lpFileName, int dwFileAttributes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetFilePointer(IntPtr hFile, int lDistanceToMove, ref int lpDistanceToMoveHigh, int dwMoveMethod);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetFileTime(IntPtr hFile, ref FILETIME lpCreationTime, ref FILETIME lpLastAccessTime, ref FILETIME lpLastWriteTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetHandleCount(int wNumber);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetHandleInformation(IntPtr hObject, int dwMask, int dwFlags);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetLocalTime(ref SYSTEMTIME lpSystemTime);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int SetLocaleInfo(int Locale, int LCType, string lpLCData);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetMailslotInfo(IntPtr hMailslot, int lReadTimeout);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetNamedPipeHandleState(IntPtr hNamedPipe, ref int lpMode, ref int lpMaxCollectionCount, ref int lpCollectDataTimeout);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetPriorityClass(IntPtr hProcess, int dwPriorityClass);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetProcessShutdownParameters(int dwLevel, int dwFlags);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetProcessWorkingSetSize(IntPtr hProcess, int dwMinimumWorkingSetSize, int dwMaximumWorkingSetSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetStdHandle(int nStdHandle, int nHandle);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetSystemPowerState(int fSuspend, int fForce);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetSystemTime(ref SYSTEMTIME lpSystemTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetTapeParameters(IntPtr hDevice, int dwOperation, IntPtr lpTapeInformation);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetTapePosition(IntPtr hDevice, int dwPositionMethod, int dwPartition, int dwOffsetLow, int dwOffsetHigh, int bimmediate);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetThreadAffinityMask(IntPtr hThread, int dwThreadAffinityMask);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetThreadContext(IntPtr hThread, ref CONTEXT lpContext);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetThreadLocale(int Locale);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetThreadPriority(IntPtr hThread, int nPriority);
 
         [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetTimeZoneInformation(ref TIME_ZONE_INFORMATION lpTimeZoneInformation);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetUnhandledExceptionFilter(int lpTopLevelExceptionFilter);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int SetVolumeLabel(string lpRootPathName, string lpVolumeName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetupComm(IntPtr hFile, int dwInQueue, int dwOutQueue);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SizeofResource(IntPtr hInstance, IntPtr hResInfo);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SleepEx(int dwMilliseconds, int bAlertable);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SuspendThread(IntPtr hThread);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SystemTimeToFileTime(ref SYSTEMTIME lpSystemTime, ref FILETIME lpFileTime);
 
         [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SystemTimeToTzSpecificLocalTime(ref TIME_ZONE_INFORMATION lpTimeZoneInformation, ref SYSTEMTIME lpUniversalTime, ref SYSTEMTIME lpLocalTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int TerminateProcess(IntPtr hProcess, int uExitCode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int TerminateThread(IntPtr hThread, int dwExitCode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int TlsAlloc();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int TlsFree(int dwTlsIndex);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int TlsGetValue(int dwTlsIndex);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int TlsSetValue(int dwTlsIndex, IntPtr lpTlsValue);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int TransactNamedPipe(IntPtr hNamedPipe, IntPtr lpInBuffer, int nInBufferSize, IntPtr lpOutBuffer, int nOutBufferSize, ref int lpBytesRead, ref OVERLAPPED lpOverlapped);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int TransmitCommChar(int nCid, byte cChar);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int UnhandledExceptionFilter(ref EXCEPTION_POINTERS ExceptionInfo);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int UnlockFile(IntPtr hFile, int dwFileOffsetLow, int dwFileOffsetHigh, int nNumberOfBytesToUnlockLow, int nNumberOfBytesToUnlockHigh);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int UnlockFileEx(IntPtr hFile, int dwReserved, int nNumberOfBytesToUnlockLow, int nNumberOfBytesToUnlockHigh, ref OVERLAPPED lpOverlapped);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int UnmapViewOfFile(IntPtr lpBaseAddress);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -3282,43 +3282,43 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int VerLanguageName(int wLang, string szLang, int nSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int VirtualAlloc(IntPtr lpAddress, int dwSize, int flAllocationType, int flProtect);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int VirtualFree(IntPtr lpAddress, int dwSize, int dwFreeType);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int VirtualLock(IntPtr lpAddress, int dwSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int VirtualProtect(IntPtr lpAddress, int dwSize, int flNewProtect, ref int lpflOldProtect);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int VirtualProtectEx(IntPtr hProcess, IntPtr lpAddress, int dwSize, int flNewProtect, ref int lpflOldProtect);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int VirtualQuery(IntPtr lpAddress, ref MEMORY_BASIC_INFORMATION lpBuffer, int dwLength);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int VirtualQueryEx(IntPtr hProcess, IntPtr lpAddress, ref MEMORY_BASIC_INFORMATION lpBuffer, int dwLength);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int VirtualUnlock(IntPtr lpAddress, int dwSize);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WaitCommEvent(IntPtr hFile, ref int lpEvtMask, ref OVERLAPPED lpOverlapped);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WaitForMultipleObjects(int nCount, ref int lpHandles, int bWaitAll, int dwMilliseconds);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WaitForMultipleObjectsEx(int nCount, ref int lpHandles, int bWaitAll, int dwMilliseconds, int bAlertable);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WaitForSingleObject(IntPtr hHandle, int dwMilliseconds);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WaitForSingleObjectEx(IntPtr hHandle, int dwMilliseconds, int bAlertable);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -3330,22 +3330,22 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int WinExec(string lpCmdLine, int nCmdShow);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WriteConsole(IntPtr hConsoleOutput, IntPtr lpBuffer, int nNumberOfCharsToWrite, ref int lpNumberOfCharsWritten, IntPtr lpReserved);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WriteConsoleOutput(IntPtr hConsoleOutput, ref CHAR_INFO lpBuffer, COORD dwBufferSize, COORD dwBufferCoord, ref SMALL_RECT lpWriteRegion);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WriteConsoleOutputAttribute(IntPtr hConsoleOutput, short lpAttribute, int nLength, COORD dwWriteCoord, ref int lpNumberOfAttrsWritten);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int WriteConsoleOutputCharacter(IntPtr hConsoleOutput, string lpCharacter, int nLength, COORD dwWriteCoord, ref int lpNumberOfCharsWritten);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WriteFile(IntPtr hFile, IntPtr lpBuffer, int nNumberOfBytesToWrite, ref int lpNumberOfBytesWritten, ref OVERLAPPED lpOverlapped);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WriteFileEx(IntPtr hFile, IntPtr lpBuffer, int nNumberOfBytesToWrite, ref OVERLAPPED lpOverlapped, ref int lpCompletionRoutine);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -3357,7 +3357,7 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int WritePrivateProfileString(string lpApplicationName, string lpKeyName, IntPtr lpString, string lpFileName);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, IntPtr lpBuffer, int nSize, ref int lpNumberOfBytesWritten);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -3366,28 +3366,28 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int WriteProfileString(string lpszSection, string lpszKeyName, string lpszString);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int WriteTapemark(IntPtr hDevice, int dwTapemarkType, int dwTapemarkCount, int bimmediate);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int hread(IntPtr hFile, IntPtr lpBuffer, int lBytes);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int hwrite(IntPtr hFile, string lpBuffer, int lBytes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int lclose(IntPtr hFile);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int lcreat(string lpPathName, int iAttribute);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int llseek(IntPtr hFile, int lOffset, int iOrigin);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int lopen(string lpPathName, int iReadWrite);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int lread(IntPtr hFile, IntPtr lpBuffer, int wBytes);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -3411,16 +3411,16 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern int lwrite(IntPtr hFile, string lpBuffer, int wBytes);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern short GetSystemDefaultLangID();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern short GetUserDefaultLangID();
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern short GlobalAddAtom(string lpString);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern short GlobalDeleteAtom(short nAtom);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
@@ -3429,76 +3429,76 @@ namespace flier268.Win32API
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern string GetEnvironmentStrings();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void CopyMemory(IntPtr Destination, IntPtr Source, int Length);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void DebugBreak();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void DeleteCriticalSection(ref CRITICAL_SECTION lpCriticalSection);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void EnterCriticalSection(ref CRITICAL_SECTION lpCriticalSection);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void ExitProcess(int uExitCode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void ExitThread(int dwExitCode);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         public static extern void FatalAppExit(int uAction, string lpMessageText);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void FatalExit(int code);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void FreeLibraryAndExitThread(IntPtr hLibModule, int dwExitCode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void GetLocalTime(ref SYSTEMTIME lpSystemTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void GetStartupInfo(ref STARTUPINFO lpStartupInfo);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void GetSystemInfo(ref SYSTEM_INFO lpSystemInfo);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void GetSystemTime(ref SYSTEMTIME lpSystemTime);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void GlobalFix(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void GlobalMemoryStatus(ref MEMORYSTATUS lpBuffer);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void GlobalUnfix(IntPtr hMem);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void InitializeCriticalSection(ref CRITICAL_SECTION lpCriticalSection);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void LeaveCriticalSection(ref CRITICAL_SECTION lpCriticalSection);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void RaiseException(int dwExceptionCode, int dwExceptionFlags, int nNumberOfArguments, ref int lpArguments);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void SetFileApisToANSI();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void SetFileApisToOEM();
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void SetLastError(int dwErrCode);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern void Sleep(int dwMilliseconds);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int GetComputerNameW(IntPtr lpBuffer, int nSize);
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]

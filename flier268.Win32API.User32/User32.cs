@@ -3019,58 +3019,58 @@ namespace flier268.Win32API
 
         public static IntPtr HWND_TOPMOST => (IntPtr)(-2);
 
-        [DllImport("advapi32")]
+        [DllImport("advapi32", CharSet = CharSet.Auto)]
         public static extern int SetServiceBits(IntPtr hServiceStatus, int dwServiceBits, int bSetBitsOn, int bUpdateImmediately);
 
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet = CharSet.Auto)]
         public static extern int SetSystemTimeAdjustment(int dwTimeAdjustment, int bTimeAdjustmentDisabled);
 
         [DllImport("mpr", CharSet = CharSet.Unicode)]
         public static extern int WNetGetUniversalName(string lpLocalPath, int dwInfoLevel, StringBuilder lpBuffer, ref int lpBufferSize);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ActivateKeyboardLayout(IntPtr hKL, int flags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int AdjustWindowRect(ref RECT lpRect, int dwStyle, int bMenu);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int AdjustWindowRectEx(ref RECT lpRect, int dsStyle, int bMenu, int dwEsStyle);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int AnyPopup();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int AppendMenu(IntPtr hMenu, int wFlags, int wIDNewItem, IntPtr lpNewItem);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ArrangeIconicWindows(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int AttachThreadInput(int idAttach, int idAttachTo, int fAttach);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int BeginDeferWindowPos(int nNumWindows);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int BeginPaint(IntPtr hwnd, ref PAINTSTRUCT lpPaint);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int BringWindowToTop(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int BroadcastSystemMessage(int dw, ref int pdw, int un, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CallMsgFilter(ref MSG lpMsg, int ncode);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CallNextHookEx(IntPtr hHook, int ncode, int wParam, IntPtr lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CallWindowProc(int lpPrevWndFunc, IntPtr hwnd, int Msg, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ChangeClipboardChain(IntPtr hwnd, IntPtr hwndNext);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
@@ -3088,223 +3088,223 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int CharUpperBuff(string lpsz, int cchLength);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CheckDlgButton(IntPtr hDlg, int nIDButton, int wCheck);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CheckMenuItem(IntPtr hMenu, int wIDCheckItem, int wCheck);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CheckMenuRadioItem(IntPtr hMenu, int un1, int un2, int un3, int un4);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CheckRadioButton(IntPtr hDlg, int nIDFirstButton, int nIDLastButton, int nIDCheckButton);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ChildWindowFromPoint(IntPtr hwnd, int xPoint, int yPoint);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ChildWindowFromPointEx(IntPtr hwnd, int xPoint, int yPoint, int un);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ClientToScreen(IntPtr hwnd, ref POINT lpPoint);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ClipCursor(ref RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CloseClipboard();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CloseDesktop(IntPtr hDesktop);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CloseWindow(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CloseWindowStation(IntPtr hWinSta);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CopyAcceleratorTable(IntPtr hAccelSrc, ACCEL[] lpAccelDst, int cAccelEntries);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CopyCursor(IntPtr hcur);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CopyIcon(IntPtr hIcon);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CopyImage(IntPtr handle, int un1, int n1, int n2, int un2);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CopyRect(ref RECT lpDestRect, ref RECT lpSourceRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CountClipboardFormats();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreateAcceleratorTable(ref ACCEL lpaccl, int cEntries);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreateCaret(IntPtr hwnd, IntPtr hBitmap, int nWidth, int nHeight);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreateCursor(IntPtr hInstance, int nXhotspot, int nYhotspot, int nWidth, int nHeight, IntPtr lpANDbitPlane, IntPtr lpXORbitPlane);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int CreateDesktop(string lpszDesktop, string lpszDevice, ref DEVMODE pDevmode, int dwFlags, int dwDesiredAccess, ref SECURITY_ATTRIBUTES lpsa);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreateDialogIndirectParam(IntPtr hInstance, ref DLGTEMPLATE lpTemplate, IntPtr hwndParent, ref int lpDialogFunc, int dwInitParam);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int CreateDialogParam(IntPtr hInstance, string lpName, IntPtr hwndParent, ref int lpDialogFunc, int lParamInit);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreateIcon(IntPtr hInstance, int nWidth, int nHeight, byte nPlanes, byte nBitsPixel, byte lpANDbits, byte lpXORbits);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreateIconFromResource(byte presbits, int dwResSize, int fIcon, int dwVer);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreateIconIndirect(ref ICONINFO piconinfo);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int CreateMDIWindow(string lpClassName, string lpWindowName, int dwStyle, int x, int y, int nWidth, int nHeight, IntPtr hwndParent, IntPtr hInstance, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreateMenu();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int CreatePopupMenu();
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int CreateWindowEx(int dwExStyle, string lpClassName, string lpWindowName, int dwStyle, int x, int y, int nWidth, int nHeight, IntPtr hwndParent, IntPtr hMenu, IntPtr hInstance, IntPtr lpParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeAbandonTransaction(int idInst, IntPtr hConv, int idTransaction);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeAccessData(IntPtr hData, ref int pcbDataSize);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeAddData(IntPtr hData, byte pSrc, int cb, int cbOff);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeClientTransaction(byte pData, int cbData, IntPtr hConv, IntPtr hszItem, int wFmt, int wType, int dwTimeout, ref int pdwResult);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeCmpStringHandles(IntPtr hsz1, IntPtr hsz2);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeConnect(int idInst, IntPtr hszService, IntPtr hszTopic, ref CONVCONTEXT pCC);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeConnectList(int idInst, IntPtr hszService, IntPtr hszTopic, IntPtr hConvList, ref CONVCONTEXT pCC);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeCreateDataHandle(int idInst, byte pSrc, int cb, int cbOff, IntPtr hszItem, int wFmt, int afCmd);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int DdeCreateStringHandle(int idInst, string psz, int iCodePage);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeDisconnect(IntPtr hConv);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeDisconnectList(IntPtr hConvList);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeEnableCallback(int idInst, IntPtr hConv, int wCmd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeFreeDataHandle(IntPtr hData);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeFreeStringHandle(int idInst, IntPtr hsz);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeGetData(IntPtr hData, byte pDst, int cbMax, int cbOff);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeGetLastError(int idInst);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeImpersonateClient(IntPtr hConv);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeKeepStringHandle(int idInst, IntPtr hsz);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeNameService(int idInst, IntPtr hsz1, IntPtr hsz2, int afCmd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdePostAdvise(int idInst, IntPtr hszTopic, IntPtr hszItem);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeQueryConvInfo(IntPtr hConv, int idTransaction, ref CONVINFO pConvInfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeQueryNextServer(IntPtr hConvList, IntPtr hConvPrev);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int DdeQueryString(int idInst, IntPtr hsz, string psz, int cchMax, int iCodePage);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeReconnect(IntPtr hConv);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeSetQualityOfService(IntPtr hwndClient, ref SECURITY_QUALITY_OF_SERVICE pqosNew, ref SECURITY_QUALITY_OF_SERVICE pqosPrev);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeSetUserHandle(IntPtr hConv, int id, IntPtr hUser);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeUnaccessData(IntPtr hData);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DdeUninitialize(int idInst);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DefDlgProc(IntPtr hDlg, int wMsg, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DefFrameProc(IntPtr hwnd, IntPtr hwndMDIClient, int wMsg, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DefMDIChildProc(IntPtr hwnd, int wMsg, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DefWindowProc(IntPtr hwnd, int wMsg, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DeferWindowPos(IntPtr hWinPosInfo, IntPtr hwnd, IntPtr hwndInsertAfter, int x, int y, int cx, int cy, int wFlags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DeleteMenu(IntPtr hMenu, int nPosition, int wFlags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DestroyAcceleratorTable(IntPtr haccel);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DestroyCaret();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DestroyCursor(IntPtr hCursor);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DestroyIcon(IntPtr hIcon);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DestroyMenu(IntPtr hMenu);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DestroyWindow(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DialogBoxIndirectParam(IntPtr hInstance, DLGTEMPLATE hDialogTemplate, IntPtr hwndParent, ref int lpDialogFunc, int dwInitParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DispatchMessage(ref MSG lpMsg);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
@@ -3319,37 +3319,37 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int DlgDirSelectEx(IntPtr hwndDlg, string lpszPath, int cbPath, int idListBox);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DragDetect(IntPtr hwnd, POINT pt);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DragObject(IntPtr hwnd1, IntPtr hwnd2, int un, int dw, IntPtr hCursor);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawAnimatedRects(IntPtr hwnd, int idAni, ref RECT lprcFrom, ref RECT lprcTo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawCaption(IntPtr hwnd, IntPtr hdc, ref RECT pcRect, int un);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawEdge(IntPtr hdc, ref RECT qrc, int edge, int grfFlags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawFocusRect(IntPtr hdc, ref RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawFrameControl(IntPtr hdc, ref RECT lpRect, int un1, int un2);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawIcon(IntPtr hdc, int x, int y, IntPtr hIcon);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawIconEx(IntPtr hdc, int xLeft, int yTop, IntPtr hIcon, int cxWidth, int cyWidth, int istepIfAniCur, IntPtr hbrFlickerFreeDraw, int diFlags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawMenuBar(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int DrawState(IntPtr hdc, IntPtr hBrush, ref int lpDrawStateProc, int lParam, int wParam, int n1, int n2, int n3, int n4, int un);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
@@ -3358,67 +3358,67 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int DrawTextEx(IntPtr hdc, string lpsz, int n, ref RECT lpRect, int un, ref DRAWTEXTPARAMS lpDrawTextParams);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EmptyClipboard();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnableMenuItem(IntPtr hMenu, int wIDEnableItem, int wEnable);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnableScrollBar(IntPtr hwnd, int wSBflags, int wArrows);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnableWindow(IntPtr hwnd, int fEnable);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EndDeferWindowPos(IntPtr hWinPosInfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EndDialog(IntPtr hDlg, int nResult);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EndPaint(IntPtr hwnd, ref PAINTSTRUCT lpPaint);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumChildWindows(IntPtr hwndParent, ref int lpEnumFunc, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumClipboardFormats(int wFormat);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumDesktopWindows(IntPtr hDesktop, ref int lpfn, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumDesktops(IntPtr hwinsta, ref int lpEnumFunc, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumProps(IntPtr hwnd, ref int lpEnumFunc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumPropsEx(IntPtr hwnd, ref int lpEnumFunc, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumThreadWindows(int dwThreadId, ref int lpfn, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumWindowStations(int lpEnumFunc, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EnumWindows(int lpEnumFunc, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int EqualRect(ref RECT lpRect1, ref RECT lpRect2);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ExcludeUpdateRgn(IntPtr hdc, IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ExitWindows(int dwReserved, int uReturnCode);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ExitWindowsEx(int uFlags, int dwReserved);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int FillRect(IntPtr hdc, ref RECT lpRect, IntPtr hBrush);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
@@ -3427,358 +3427,358 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern IntPtr FindWindowEx(IntPtr hwnd1, IntPtr hwnd2, string lpsz1, string lpsz2);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int FlashWindow(IntPtr hwnd, int bInvert);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int FrameRect(IntPtr hdc, ref RECT lpRect, IntPtr hBrush);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int FreeDDElParam(int msg, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetActiveWindow();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetCapture();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetCaretBlinkTime();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetCaretPos(ref POINT lpPoint);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetClassInfo(IntPtr hInstance, string lpClassName, out WNDCLASS lpWndClass);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClassLong(IntPtr hwnd, int nIndex);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetClassName(IntPtr hwnd, string lpClassName, int nMaxCount);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClassWord(IntPtr hwnd, int nIndex);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClientRect(IntPtr hwnd, ref RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClipCursor(out RECT lprc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClipboardData(int wFormat);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetClipboardFormatName(int wFormat, string lpString, int nMaxCount);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClipboardOwner();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClipboardViewer();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetCursor();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetCursorPos(out POINT lpPoint);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetDC(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetDCEx(IntPtr hwnd, IntPtr hrgnclip, int fdwOptions);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetDesktopWindow();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetDialogBaseUnits();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetDlgCtrlID(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetDlgItem(IntPtr hDlg, int nIDDlgItem);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetDlgItemInt(IntPtr hDlg, int nIDDlgItem, ref int lpTranslated, int bSigned);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetDlgItemText(IntPtr hDlg, int nIDDlgItem, StringBuilder lpString, int nMaxCount);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetDoubleClickTime();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetFocus();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern IntPtr GetForegroundWindow();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetIconInfo(IntPtr hIcon, out ICONINFO piconinfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetInputState();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetKBCodePage();
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetKeyNameText(int lParam, StringBuilder lpBuffer, int nSize);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetKeyboardLayout(int dwLayout);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetKeyboardLayoutList(int nBuff, ref int lpList);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetKeyboardLayoutName(string pwszKLID);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetKeyboardState(byte pbKeyState);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetKeyboardType(int nTypeFlag);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetLastActivePopup(IntPtr hwndOwnder);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenu(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenuCheckMarkDimensions();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenuContextHelpId(IntPtr hMenu);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenuDefaultItem(IntPtr hMenu, int fByPos, int gmdiFlags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenuItemCount(IntPtr hMenu);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenuItemID(IntPtr hMenu, int nPos);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenuItemInfo(IntPtr hMenu, int un, int b, ref MENUITEMINFO lpMenuItemInfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenuItemRect(IntPtr hwnd, IntPtr hMenu, int uItem, ref RECT lprcItem);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMenuState(IntPtr hMenu, int wID, int wFlags);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetMenuString(IntPtr hMenu, int wIDItem, StringBuilder lpString, int nMaxCount, int wFlag);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMessage(ref MSG lpMsg, IntPtr hwnd, int wMsgFilterMin, int wMsgFilterMax);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMessageExtraInfo();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMessagePos();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMessageTime();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetMonitorInfo(IntPtr hMonitor, ref MONITORINFO lpmi);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetNextDlgGroupItem(IntPtr hDlg, IntPtr hCtl, int bPrevious);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetNextDlgTabItem(IntPtr hDlg, IntPtr hCtl, int bPrevious);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetNextWindow(IntPtr hwnd, int wFlag);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetOpenClipboardWindow();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetParent(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetPriorityClipboardFormat(int lpPriorityList, int nCount);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetProcessWindowStation();
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetProp(IntPtr hwnd, string lpString);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetQueueStatus(int fuFlags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetScrollInfo(IntPtr hwnd, int n, ref SCROLLINFO lpScrollInfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetScrollPos(IntPtr hwnd, int nBar);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetScrollRange(IntPtr hwnd, int nBar, ref int lpMinPos, ref int lpMaxPos);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetSubMenu(IntPtr hMenu, int nPos);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetSysColor(int nIndex);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetSysColorBrush(int nIndex);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetSystemMenu(IntPtr hwnd, int bRevert);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetSystemMetrics(int nIndex);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetTabbedTextExtent(IntPtr hdc, string lpString, int nCount, int nTabPositions, ref int lpnTabStopPositions);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetThreadDesktop(int dwThread);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetTopWindow(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetUpdateRect(IntPtr hwnd, ref RECT lpRect, int bErase);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetUpdateRgn(IntPtr hwnd, IntPtr hRgn, int fErase);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetUserObjectInformation(IntPtr hObj, int nIndex, IntPtr pvInfo, int nLength, ref int lpnLengthNeeded);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetUserObjectSecurity(IntPtr hObj, ref int pSIRequested, ref SECURITY_DESCRIPTOR pSd, int nLength, ref int lpnLengthNeeded);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindow(IntPtr hwnd, int wCmd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindowContextHelpId(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindowDC(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindowLong(IntPtr hwnd, int nIndex);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindowPlacement(IntPtr hwnd, out WINDOWPLACEMENT lpwndpl);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindowRect(IntPtr hwnd, out RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindowRgn(IntPtr hwnd, IntPtr hRgn);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int GetWindowText(IntPtr hwnd, StringBuilder lpString, int cch);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindowTextLength(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetWindowThreadProcessId(IntPtr hwnd, ref int lpdwProcessId);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GrayString(IntPtr hdc, IntPtr hBrush, ref int lpOutputFunc, ref int lpData, int nCount, int X, int Y, int nWidth, int nHeight);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int HideCaret(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int HiliteMenuItem(IntPtr hwnd, IntPtr hMenu, int wIDHiliteItem, int wHilite);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ImpersonateDdeClientWindow(IntPtr hwndClient, IntPtr hwndServer);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int InSendMessage();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int InflateRect(ref RECT lpRect, int x, int y);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int InsertMenu(IntPtr hMenu, int nPosition, int wFlags, int wIDNewItem, IntPtr lpNewItem);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int InsertMenuItem(IntPtr hMenu, int un, bool b, ref MENUITEMINFO lpcMenuItemInfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IntersectRect(ref RECT lpDestRect, ref RECT lpSrc1Rect, ref RECT lpSrc2Rect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int InvalidateRect(IntPtr hwnd, ref RECT lpRect, int bErase);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int InvalidateRgn(IntPtr hwnd, IntPtr hRgn, int bErase);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int InvertRect(IntPtr hdc, ref RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsCharAlpha(byte cChar);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsCharAlphaNumeric(byte cChar);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsCharLower(byte cChar);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsCharUpper(byte cChar);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsChild(IntPtr hwndParent, IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsClipboardFormatAvailable(int wFormat);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsDialogMessage(IntPtr hDlg, ref MSG lpMsg);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsDlgButtonChecked(IntPtr hDlg, int nIDButton);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsIconic(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsMenu(IntPtr hMenu);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsRectEmpty(ref RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsWindow(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsWindowEnabled(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsWindowUnicode(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsWindowVisible(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int IsZoomed(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int KillTimer(IntPtr hwnd, int nIDEvent);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
@@ -3805,37 +3805,37 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int LoadMenu(IntPtr hInstance, string lpString);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int LoadMenuIndirect(int lpMenuTemplate);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int LoadString(IntPtr hInstance, int wID, string lpBuffer, int nBufferMax);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int LockWindowUpdate(IntPtr hwndLock);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int LookupIconIdFromDirectory(byte presbits, int fIcon);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int LookupIconIdFromDirectoryEx(byte presbits, int fIcon, int cxDesired, int cyDesired, int Flags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MapDialogRect(IntPtr hDlg, ref RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MapVirtualKey(int wCode, int wMapType);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MapVirtualKeyEx(int uCode, int uMapType, int dwhkl);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MapWindowPoints(IntPtr hwndFrom, IntPtr hwndTo, POINT[] lppt, int cPoints);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MenuItemFromPoint(IntPtr hwnd, IntPtr hMenu, POINT ptScreen);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MessageBeep(int wType);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
@@ -3844,19 +3844,19 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int MessageBoxEx(IntPtr hwnd, string lpText, string lpCaption, int uType, int wLanguageId);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MessageBoxIndirect(ref MSGBOXPARAMS lpMsgBoxParams);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ModifyMenu(IntPtr hMenu, int nPosition, int wFlags, int wIDNewItem, IntPtr lpString);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MoveWindow(IntPtr hwnd, int x, int y, int nWidth, int nHeight, int bRepaint);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int MsgWaitForMultipleObjects(int nCount, ref int pHandles, int fWaitAll, int dwMilliseconds, int dwWakeMask);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int OemKeyScan(int wOemChar);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
@@ -3865,91 +3865,91 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int OemToCharBuff(string lpszSrc, string lpszDst, int cchDstLength);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int OffsetRect(ref RECT lpRect, int x, int y);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int OpenClipboard(IntPtr hwnd);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int OpenDesktop(string lpszDesktop, int dwFlags, int fInherit, int dwDesiredAccess);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int OpenIcon(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int OpenInputDesktop(int dwFlags, int fInherit, int dwDesiredAccess);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int OpenWindowStation(string lpszWinSta, int fInherit, int dwDesiredAccess);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int PackDDElParam(int msg, int uiLo, int uiHi);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int PaintDesktop(IntPtr hdc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int PeekMessage(ref MSG lpMsg, IntPtr hwnd, int wMsgFilterMin, int wMsgFilterMax, int wRemoveMsg);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int PostMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int PostThreadMessage(int idThread, int msg, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int PrintWindow(IntPtr hwnd, IntPtr hdc, int flags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int PtInRect(ref RECT lpRect, int ptX, int ptY);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int RedrawWindow(IntPtr hwnd, ref RECT lprcUpdate, IntPtr hrgnUpdate, int fuRedraw);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int RegisterClass(ref WNDCLASS Class);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int RegisterClipboardFormat(string lpString);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int RegisterHotKey(IntPtr hwnd, int id, int fsModifiers, int vk);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int RegisterWindowMessage(string lpString);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ReleaseCapture();
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ReleaseDC(IntPtr hwnd, IntPtr hdc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int RemoveProp(IntPtr hwnd, string lpString);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ReplyMessage(int lReply);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ReuseDDElParam(int lParam, int msgIn, int msgOut, int uiLo, int uiHi);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ScreenToClient(IntPtr hwnd, ref POINT lpPoint);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ScrollDC(IntPtr hdc, int dx, int dy, ref RECT lprcScroll, ref RECT lprcClip, IntPtr hrgnUpdate, ref RECT lprcUpdate);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ScrollWindow(IntPtr hwnd, int XAmount, int YAmount, ref RECT lpRect, ref RECT lpClipRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ScrollWindowEx(IntPtr hwnd, int dx, int dy, ref RECT lprcScroll, ref RECT lprcClip, IntPtr hrgnUpdate, ref RECT lprcUpdate, int fuScroll);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SendDlgItemMessage(IntPtr hDlg, int nIDDlgItem, int wMsg, int wParam, int lParam);
 
         [DllImport("user32", CharSet = CharSet.Auto, SetLastError = true)]
@@ -3976,16 +3976,16 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern IntPtr SendMessage(IntPtr hWnd, int wMsg, IntPtr wParam, ref CHARFORMAT2 lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SendMessage(IntPtr hWnd, int wMsg, int wParam, ref RECT lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern IntPtr SendMessage(IntPtr hWnd, int wMsg, IntPtr wParam, ref RECT lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SendMessage(IntPtr hWnd, int wMsg, int wParam, ref POINT lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern IntPtr SendMessage(IntPtr hWnd, int wMsg, IntPtr wParam, ref POINT lParam);
 
         [DllImport("user32", CharSet = CharSet.Unicode, SetLastError = true)]
@@ -3994,292 +3994,292 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode, SetLastError = true)]
         public static extern IntPtr SendMessage(IntPtr hwnd, int wMsg, IntPtr wParam, StringBuilder lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SendMessage(IntPtr hWnd, int wMsg, int wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern IntPtr SendMessage(IntPtr hWnd, int wMsg, IntPtr wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SendMessageW(IntPtr hWnd, int Msg, int wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern IntPtr SendMessageW(IntPtr hWnd, int Msg, IntPtr wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
 
         [DllImport("user32.dll", CharSet = CharSet.Unicode)]
         public static extern int SendMessage(IntPtr hWnd, string strMessage, string strCaption, uint uiType);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SendMessageCallback(IntPtr hwnd, int wMsg, int wParam, int lParam, ref int lpResultCallBack, int dwData);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SendMessageTimeout(IntPtr hwnd, int wMsg, int wParam, int lParam, int fuFlags, int uTimeout, ref int lpdwResult);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SendNotifyMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetActiveWindow(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetCapture(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetCaretBlinkTime(int wMSeconds);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetCaretPos(int x, int y);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetClassLong(IntPtr hwnd, int nIndex, int dwNewLong);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetClassWord(IntPtr hwnd, int nIndex, int wNewWord);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetClipboardData(int wFormat, IntPtr hMem);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetClipboardViewer(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetCursor(IntPtr hCursor);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetCursorPos(int x, int y);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetDlgItemInt(IntPtr hDlg, int nIDDlgItem, int wValue, int bSigned);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int SetDlgItemText(IntPtr hDlg, int nIDDlgItem, string lpString);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetDoubleClickTime(int wCount);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetFocus(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetForegroundWindow(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetKeyboardState(byte lppbKeyState);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetMenu(IntPtr hwnd, IntPtr hMenu);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetMenuContextHelpId(IntPtr hMenu, int dw);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetMenuDefaultItem(IntPtr hMenu, int uItem, int fByPos);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetMenuItemBitmaps(IntPtr hMenu, int nPosition, int wFlags, IntPtr hBitmapUnchecked, IntPtr hBitmapChecked);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetMenuItemInfo(IntPtr hMenu, int un, bool b, ref MENUITEMINFO lpcMenuItemInfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetMessageExtraInfo(int lParam);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetMessageQueue(int cMessagesMax);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetParent(IntPtr hwndChild, IntPtr hwndNewParent);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetProcessWindowStation(IntPtr hWinSta);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int SetProp(IntPtr hwnd, string lpString, IntPtr hData);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetRect(ref RECT lpRect, int X1, int Y1, int X2, int Y2);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetRectEmpty(ref RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetScrollInfo(IntPtr hwnd, int n, ref SCROLLINFO lpcScrollInfo, bool redraw);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetScrollPos(IntPtr hwnd, int nBar, int nPos, int bRedraw);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetScrollRange(IntPtr hwnd, int nBar, int nMinPos, int nMaxPos, int bRedraw);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetSysColors(int nChanges, ref int lpSysColor, ref int lpColorValues);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetSystemCursor(IntPtr hcur, int id);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetThreadDesktop(IntPtr hDesktop);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetTimer(IntPtr hwnd, int nIDEvent, int uElapse, ref int lpTimerFunc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetUserObjectInformation(IntPtr hObj, int nIndex, IntPtr pvInfo, int nLength);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetUserObjectSecurity(IntPtr hObj, ref int pSIRequested, ref SECURITY_DESCRIPTOR pSd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetWindowContextHelpId(IntPtr hwnd, int dw);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetWindowLong(IntPtr hwnd, int nIndex, int dwNewLong);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetWindowPlacement(IntPtr hwnd, ref WINDOWPLACEMENT lpwndpl);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetWindowPos(IntPtr hwnd, IntPtr hwndInsertAfter, int x, int y, int cx, int cy, int wFlags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetWindowRgn(IntPtr hwnd, IntPtr hRgn, int bRedraw);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int SetWindowText(IntPtr hwnd, string lpString);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetWindowWord(IntPtr hwnd, int nIndex, int wNewWord);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetWindowsHook(int nFilterType, ref int pfnFilterProc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SetWindowsHookEx(int idHook, ref int lpfn, IntPtr hmod, int dwThreadId);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ShowCaret(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ShowCursor(int bShow);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ShowOwnedPopups(IntPtr hwnd, int fShow);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ShowScrollBar(IntPtr hwnd, int wBar, int bShow);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ShowWindow(IntPtr hwnd, int nCmdShow);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ShowWindowAsync(IntPtr hwnd, int nCmdShow);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SubtractRect(ref RECT lprcDst, ref RECT lprcSrc1, ref RECT lprcSrc2);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SwapMouseButton(int bSwap);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SwitchDesktop(IntPtr hDesktop);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int SystemParametersInfo(int uAction, int uParam, ref IntPtr lpvParam, int fuWinIni);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int TabbedTextOut(IntPtr hdc, int x, int y, string lpString, int nCount, int nTabPositions, ref int lpnTabStopPositions, int nTabOrigin);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ToAscii(int uVirtKey, int uScanCode, byte lpbKeyState, ref int lpwTransKey, int fuState);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ToAsciiEx(int uVirtKey, int uScanCode, byte lpKeyState, short lpChar, int uFlags, int dwhkl);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int ToUnicode(int wVirtKey, int wScanCode, byte lpKeyState, string pwszBuff, int cchBuff, int wFlags);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int TrackPopupMenu(IntPtr hMenu, int wFlags, int x, int y, int nReserved, IntPtr hwnd, ref RECT lprc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int TrackPopupMenuEx(IntPtr hMenu, int un, int n1, int n2, IntPtr hwnd, ref TPMPARAMS lpTPMParams);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int TranslateAccelerator(IntPtr hwnd, IntPtr hAccTable, ref MSG lpMsg);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int TranslateMDISysAccel(IntPtr hwndClient, ref MSG lpMsg);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int TranslateMessage(ref MSG lpMsg);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int UnhookWindowsHook(int nCode, ref int pfnFilterProc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int UnhookWindowsHookEx(IntPtr hHook);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int UnionRect(ref RECT lpDestRect, ref RECT lpSrc1Rect, ref RECT lpSrc2Rect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int UnloadKeyboardLayout(IntPtr hKL);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int UnpackDDElParam(int msg, int lParam, ref int puiLo, ref int puiHi);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int UnregisterClass(string lpClassName, IntPtr hInstance);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int UnregisterHotKey(IntPtr hwnd, int id);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int UpdateWindow(IntPtr hwnd);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ValidateRect(IntPtr hwnd, ref RECT lpRect);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ValidateRgn(IntPtr hwnd, IntPtr hRgn);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int WaitForInputIdle(IntPtr hProcess, int dwMilliseconds);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int WaitMessage();
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern int WinHelp(IntPtr hwnd, string lpHelpFile, int wCommand, int dwData);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int WindowFromDC(IntPtr hdc);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int WindowFromPoint(int xPoint, int yPoint);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short CascadeWindows(IntPtr hwndParent, int wHow, ref RECT lpRect, int cKids, ref int lpkids);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short GetAsyncKeyState(int vKey);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short GetKeyState(int nVirtKey);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short GetWindowWord(IntPtr hwnd, int nIndex);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short RegisterClassEx(ref WNDCLASSEX pcWndClassEx);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short TileWindows(IntPtr hwndParent, int wHow, ref RECT lpRect, int cKids, ref int lpKids);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short VkKeyScan(byte cChar);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short VkKeyScanEx(byte ch, int dwhkl);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
@@ -4294,19 +4294,19 @@ namespace flier268.Win32API
         [DllImport("user32", CharSet = CharSet.Unicode)]
         public static extern string CharUpper(string lpsz);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern void PostQuitMessage(int nExitCode);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern void mouse_event(int dwFlags, int dx, int dy, int cButtons, int dwExtraInfo);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern void SetDebugErrorLevel(int dwLevel);
 
-        [DllImport("user32")]
+        [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern void SetLastErrorEx(int dwErrCode, int dwType);
 
         #region Expansion

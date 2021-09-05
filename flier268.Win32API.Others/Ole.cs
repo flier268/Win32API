@@ -5,13 +5,13 @@ namespace flier268.Win32API
 {
     public abstract class Ole
     {
-        [DllImport("ole32")]
+        [DllImport("ole32", CharSet = CharSet.Auto)]
         public static extern int OleInitialize(IntPtr vbNullString);
 
-        [DllImport("ole32")]
+        [DllImport("ole32", CharSet = CharSet.Auto)]
         public static extern void CoTaskMemFree(IntPtr hMem);
 
-        [DllImport("ole32")]
+        [DllImport("ole32", CharSet = CharSet.Auto)]
         public static extern void OleUninitialize();
     }
 }
