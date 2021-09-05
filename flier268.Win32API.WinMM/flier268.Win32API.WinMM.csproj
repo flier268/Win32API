@@ -13,7 +13,7 @@
     <PackageProjectUrl>https://github.com/flier268/Win32API</PackageProjectUrl>
     <PackageIcon>icon.jpg</PackageIcon>
     <Description>P/Invoke methods for the Windows API</Description>
-    <Version>1.0.0.1</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
