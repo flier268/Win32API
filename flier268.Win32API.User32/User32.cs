@@ -3101,10 +3101,10 @@ namespace flier268.Win32API
         public static extern int CheckRadioButton(IntPtr hDlg, int nIDFirstButton, int nIDLastButton, int nIDCheckButton);
 
         [DllImport("user32", CharSet = CharSet.Auto)]
-        public static extern int ChildWindowFromPoint(IntPtr hwnd, int xPoint, int yPoint);
+        public static extern int ChildWindowFromPoint(IntPtr hWndParent, Point pt);
 
         [DllImport("user32", CharSet = CharSet.Auto)]
-        public static extern int ChildWindowFromPointEx(IntPtr hwnd, int xPoint, int yPoint, int un);
+        public static extern int ChildWindowFromPointEx(IntPtr hWndParent, Point pt, uint uFlags);
 
         [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int ClientToScreen(IntPtr hwnd, ref POINT lpPoint);
@@ -3455,7 +3455,7 @@ namespace flier268.Win32API
         public static extern int GetClassLong(IntPtr hwnd, int nIndex);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
-        public static extern int GetClassName(IntPtr hwnd, string lpClassName, int nMaxCount);
+        public static extern int GetClassName(IntPtr hwnd, StringBuilder lpClassName, int nMaxCount);
 
         [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClassWord(IntPtr hwnd, int nIndex);
@@ -3470,7 +3470,7 @@ namespace flier268.Win32API
         public static extern int GetClipboardData(int wFormat);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
-        public static extern int GetClipboardFormatName(int wFormat, string lpString, int nMaxCount);
+        public static extern int GetClipboardFormatName(int wFormat, StringBuilder lpString, int nMaxCount);
 
         [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetClipboardOwner();
@@ -3536,7 +3536,7 @@ namespace flier268.Win32API
         public static extern int GetKeyboardLayoutList(int nBuff, ref int lpList);
 
         [DllImport("user32", CharSet = CharSet.Unicode)]
-        public static extern int GetKeyboardLayoutName(string pwszKLID);
+        public static extern int GetKeyboardLayoutName(StringBuilder pwszKLID);
 
         [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern int GetKeyboardState(byte pbKeyState);
@@ -4256,7 +4256,7 @@ namespace flier268.Win32API
         public static extern int WindowFromDC(IntPtr hdc);
 
         [DllImport("user32", CharSet = CharSet.Auto)]
-        public static extern int WindowFromPoint(int xPoint, int yPoint);
+        public static extern int WindowFromPoint(Point point);
 
         [DllImport("user32", CharSet = CharSet.Auto)]
         public static extern short CascadeWindows(IntPtr hwndParent, int wHow, ref RECT lpRect, int cKids, ref int lpkids);
